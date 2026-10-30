@@ -1,0 +1,28 @@
+---
+title: "Olas de calor y muerte en España"
+subtitle: "FUENTES DE DATOS BIOMÉDICOS"
+author: "Laura Lasierra Gastón, Ángela Navarro Cantón y Sergio Pascual Redondo"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+install.packages("tidyverse")
+install.packages("jsonlite")
+
+library (tidyverse)
+library(jsonlite)
+
+
+# Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 en las distintas comunidades autónomas. 
+
+leer_json <- function(ruta) {
+  texto <- paste(readLines(file(ruta, encoding = "UTF-8-BOM"), warn = FALSE), collapse = "\n")
+  fromJSON(texto)
+}
+
+muertes_json <- leer_json("INPUT/DATA/muertes_comunidad_autonoma_2020.json")$Respuesta$Datos$Metricas$Datos[[1]] %>%
+  select(Año = Agno, CCAA = Parametro, Muertes = Valor)
+  
+olas_json <- leer_json("INPUT/DATA/olas_calor_provincia_2020.json")$datos
+  
+  

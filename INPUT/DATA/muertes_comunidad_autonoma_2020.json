@@ -1,0 +1,177 @@
+﻿{
+    "Url": "https://www.epdata.es/comunidades-autonomas-donde-mas-aumentaron-muertes-2020-respecto-ano-anterior/ae983682-4d79-404e-ba6d-ee481aeeeff2",
+    "Respuesta": {
+        "Id": "ae983682-4d79-404e-ba6d-ee481aeeeff2",
+        "Url": "https://www.epdata.es/comunidades-autonomas-donde-mas-aumentaron-muertes-2020-respecto-ano-anterior/ae983682-4d79-404e-ba6d-ee481aeeeff2",
+        "Titulo": "Comunidades autónomas en dónde más aumentaron las muertes en 2020 respecto al año anterior",
+        "Subtitulo": "",
+        "Datos": {
+            "Metricas": [
+                {
+                    "Id": 0,
+                    "Nombre": "Defunciones a nivel anual - Variación absoluta de Número de personas con respecto al año anterior para total como sexo del fallecido, total como grupo de edad, total como causa de muerte y Andalucía, Aragón, Asturias, Canarias, Cantabria, Castilla León, Castilla-La Mancha, Cataluña, Ceuta, Comunidad Valenciana, Extremadura, Galicia, Islas Baleares, La Rioja, Madrid, Melilla, Murcia, Navarra, País Vasco como comunidad autónoma de residencia del fallecido",
+                    "SonDatosNumericos": true,
+                    "Fuente": "INE",
+                    "Clasificacion": null,
+                    "Unidad": "Variación absoluta de Número de personas con respecto al año anterior",
+                    "Escala": "Unidades",
+                    "EscalaFactorPotencia10": 0,
+                    "Datos": [
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "País Vasco",
+                            "Valor": 2806,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Murcia",
+                            "Valor": 984,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Navarra",
+                            "Valor": 1267,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Comunidad Valenciana",
+                            "Valor": 5762,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "La Rioja",
+                            "Valor": 633,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Ceuta",
+                            "Valor": 114,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Melilla",
+                            "Valor": 97,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Madrid",
+                            "Valor": 19584,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Galicia",
+                            "Valor": 1929,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Extremadura",
+                            "Valor": 1784,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Cataluña",
+                            "Valor": 17516,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Castilla-La Mancha",
+                            "Valor": 6909,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Castilla y León",
+                            "Valor": 8269,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Cantabria",
+                            "Valor": 551,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Canarias",
+                            "Valor": 1024,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Islas Baleares",
+                            "Valor": 668,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Asturias",
+                            "Valor": 2502,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Aragón",
+                            "Valor": 3317,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        },
+                        {
+                            "Agno": 2020,
+                            "Periodo": "Año",
+                            "Parametro": "Andalucía",
+                            "Valor": 9133,
+                            "Estado": "Definitivo",
+                            "Notas": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,7 +1,9 @@
 # RELACIÓN ENTRE LAS ALTAS TEMPERATURAS Y MORTALIDAD EN ESPAÑA
 
 Autores: Laura Lasierra Gastón, Ángela Navarro Cantón y Sergio Pascual Redondo
+
 Curso Académico: 2026/2027
+
 Grupo: I
 
 # INTRODUCCIÓN
