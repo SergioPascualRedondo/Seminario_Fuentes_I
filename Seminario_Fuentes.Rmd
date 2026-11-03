@@ -11,10 +11,13 @@ install.packages("jsonlite")
 
 library (tidyverse)
 library(jsonlite)
+library(readr)
 
 
-# Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 en las distintas comunidades autónomas. 
+# Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 en las distintas comunidades autónomas y de las olas de calor por provincia. También importamos el archivo csv correspondiente a las muertes por covid en ese mismo año.  
 
+
+#Definimos la función leer_json para R ignore el carácter invisible (BOM) con el que empieza nuestro archivo JSON.
 leer_json <- function(ruta) {
   texto <- paste(readLines(file(ruta, encoding = "UTF-8-BOM"), warn = FALSE), collapse = "\n")
   fromJSON(texto)
@@ -22,7 +25,19 @@ leer_json <- function(ruta) {
 
 muertes_json <- leer_json("INPUT/DATA/muertes_comunidad_autonoma_2020.json")$Respuesta$Datos$Metricas$Datos[[1]] %>%
   select(Año = Agno, CCAA = Parametro, Muertes = Valor)
-  
-olas_json <- leer_json("INPUT/DATA/olas_calor_provincia_2020.json")$datos
-  
+muertes_json
+
+
+olas_json <- leer_json("INPUT/DATA/olas_calor_provincias_2020.json")$datos
+olas_json
+
+
+covid_csv <- read_delim("INPUT/DATA/49923.csv", delim = ";", escape_double = FALSE, trim_ws = TRUE, 
+locale = locale(encoding = "latin1")) 
+covid_csv
+summary (covid_csv)
+#Utilizamos encoding = "latin1" para leer bien los caracteres del csv 
+
+
+
   
