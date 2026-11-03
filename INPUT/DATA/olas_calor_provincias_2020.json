@@ -1,0 +1,494 @@
+{
+  "fuente": "https://www.aemet.es/documentos/es/conocermas/recursos_en_linea/publicaciones_y_estudios/estudios/Olas_calor/listadoprovinciasolascalor_1975_2023.pdf",
+  "nota": "La inclusión de una provincia en una ola no implica que todos los días del intervalo fueran de ola de calor en esa provincia. Se trata de olas nacionales con provincias afectadas según AEMET.",
+  "datos": [
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "ALMERIA",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "CADIZ",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "CUENCA",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "JAEN",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "LEON",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "MADRID",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "MALAGA",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "OURENSE",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "SEGOVIA",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "SORIA",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 1,
+      "fecha_inicio": "2020-07-18",
+      "fecha_fin": "2020-07-20",
+      "provincia": "TOLEDO",
+      "numero_provincias_ola": 11
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "ALBACETE",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "ALICANTE",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "ALMERIA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "AVILA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "BALEARES",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "BARCELONA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "CADIZ",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "CIUDAD REAL",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "CUENCA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "GIRONA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "GRANADA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "GUADALAJARA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "JAEN",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "LLEIDA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "MADRID",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "MALAGA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "MURCIA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "SALAMANCA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "SEGOVIA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "TARRAGONA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "TOLEDO",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "VALLADOLID",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 2,
+      "fecha_inicio": "2020-07-25",
+      "fecha_fin": "2020-08-02",
+      "provincia": "ZAMORA",
+      "numero_provincias_ola": 23
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "ALMERIA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "ARABA/ALAVA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "BARCELONA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "BURGOS",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "CADIZ",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "CIUDAD REAL",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "CUENCA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "GIRONA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "GRANADA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "GUADALAJARA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "HUESCA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "JAEN",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "LEON",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "LLEIDA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "LUGO",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "MALAGA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "NAVARRA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "OURENSE",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "PALENCIA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "SALAMANCA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "SEGOVIA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "SORIA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "TERUEL",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "TOLEDO",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "VALLADOLID",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "ZAMORA",
+      "numero_provincias_ola": 27
+    },
+    {
+      "anio": 2020,
+      "id_ola": 3,
+      "fecha_inicio": "2020-08-05",
+      "fecha_fin": "2020-08-10",
+      "provincia": "ZARAGOZA",
+      "numero_provincias_ola": 27
+    }
+  ]
+}
