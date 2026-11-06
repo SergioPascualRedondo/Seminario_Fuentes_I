@@ -11,32 +11,95 @@ install.packages("jsonlite")
 
 library (tidyverse)
 library(jsonlite)
+library(tidyjson)
 library(readr)
 
 
-# Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 en las distintas comunidades autónomas y de las olas de calor por provincia. También importamos el archivo csv correspondiente a las muertes por covid en ese mismo año.  
+#Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 en las distintas comunidades autónomas y de las olas de calor por provincia. También importamos el archivo csv correspondiente a las muertes por covid en ese mismo año.  
 
 
-#Definimos la función leer_json para R ignore el carácter invisible (BOM) con el que empieza nuestro archivo JSON.
+#Definimos la función leer_json para que R ignore el carácter invisible (BOM) con el que empieza nuestro archivo JSON.
 leer_json <- function(ruta) {
-  texto <- paste(readLines(file(ruta, encoding = "UTF-8-BOM"), warn = FALSE), collapse = "\n")
-  fromJSON(texto)
+  paste(readLines(file(ruta, encoding = "UTF-8-BOM"), warn = FALSE), 
+    collapse = "\n")
+ 
 }
 
-muertes_json <- leer_json("INPUT/DATA/muertes_comunidad_autonoma_2020.json")$Respuesta$Datos$Metricas$Datos[[1]] %>%
-  select(Año = Agno, CCAA = Parametro, Muertes = Valor)
-muertes_json
+
+#Nuestro json de muertes en 2020 por CCAA está anidado, así que para poder imporar los datos que nos interesan lo hacemos de la siguiente manera: 
+
+muertes_json <- leer_json("INPUT/DATA/muertes_comunidad_autonoma_2020.json")
 
 
-olas_json <- leer_json("INPUT/DATA/olas_calor_provincias_2020.json")$datos
-olas_json
+# MUERTES EN 2020
+
+muertes_json %>%
+  gather_object() %>%
+  json_types() %>%
+  count (name, type)
+ 
+#entramos capa a capa hasta la tabla de datos y la aplanamos
+muertes <- muertes_json %>%
+  enter_object ("Respuesta")%>%
+  enter_object("Datos") %>%
+  enter_object ("Metricas")%>%
+  gather_array() %>%
+  enter_object("Datos")%>%
+  gather_array(column.name = "indice_ccaa") %>%
+  spread_all() %>%
+  as_tibble() %>%
+  select (ano= Agno, ccaa=Parametro, var_defunciones= Valor, estado=Estado)
+
+muertes
+  
+
+# OLAS DE CALOR 
+
+olas_json <- leer_json("INPUT/DATA/olas_calor_provincias_2020.json")
+
+olas_json %>%
+  gather_object() %>%
+  json_types () %>%
+  count (name, type)   #datos sigue siendo un array
+  
+olas <- olas_json %>%
+  enter_object("datos")%>%
+  gather_array() %>%
+  spread_all()%>%
+  as_tibble()%>%
+  select(-document.id, -array.index) %>% #eliminamos estas dos columnas que aparecen por defecto
+
+  mutate(across(c(fecha_inicio, fecha_fin), as.Date),
+  duracion_dias = as.integer(fecha_fin - fecha_inicio) +1)  #calculamos cuantos días duró cada ola de calor, dato que utilizaremos más adelante.
+
+olas 
 
 
-covid_csv <- read_delim("INPUT/DATA/49923.csv", delim = ";", escape_double = FALSE, trim_ws = TRUE, 
-locale = locale(encoding = "latin1")) 
-covid_csv
-summary (covid_csv)
-#Utilizamos encoding = "latin1" para leer bien los caracteres del csv 
+# MUERTES POR COVID EN 2020
+
+covid_csv <- read_delim("INPUT/DATA/49923.csv", delim = ";", escape_double = FALSE, trim_ws = TRUE, locale = locale(encoding = "latin1", decimal_mark=",", grouping_mark="."), col_types = cols(Total = col_number())) 
+                        
+covid <- covid_csv %>%
+  
+  rename (ccaa_raw=2, muertes_covid = Total)%>%
+  
+  filter(!is.na(ccaa_raw)) %>%   
+  
+  mutate(ccaa = str_remove(ccaa_raw, "^\\d+\\s+"),       
+         ccaa= case_match(ccaa,
+           "Asturias, Principado de"      ~ "Asturias",
+           "Balears, Illes"               ~ "Islas Baleares",
+           "Castilla - La Mancha"         ~ "Castilla-La Mancha",
+           "Comunitat Valenciana"         ~ "Comunidad Valenciana",
+           "Madrid, Comunidad de"         ~ "Madrid",
+           "Murcia, Región de"            ~ "Murcia",
+           "Navarra, Comunidad Foral de"  ~ "Navarra",
+           "Rioja, La"                    ~ "La Rioja",
+           .default = ccaa)) %>%
+  select(ccaa, muertes_covid)
+  
+  
+covid
 
 
 
