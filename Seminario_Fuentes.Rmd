@@ -46,6 +46,7 @@ muertes_json <- leer_json("INPUT/DATA/muertes_comunidad_autonoma_2020.json")
 
 
 muertes_json %>%
+  spread_all()%>%
   gather_object() %>%
   json_types() %>%
   count (name, type)
@@ -73,6 +74,7 @@ muertes
 olas_json <- leer_json("INPUT/DATA/olas_calor_provincias_2020.json")
 
 olas_json %>%
+  spread_all()%>%
   gather_object() %>%
   json_types () %>%
   count (name, type)   #datos sigue siendo un array
@@ -84,7 +86,7 @@ olas <- olas_json %>%
   as_tibble()%>%
   select(-document.id, -array.index) %>% #eliminamos estas dos columnas que aparecen por defecto
 
-  mutate(across(c(fecha_inicio, fecha_fin), as.Date),
+  mutate(across(c(fecha_inicio, fecha_fin), as.Date), #guardamos las fechas en formato Date
   duracion_dias = as.integer(fecha_fin - fecha_inicio) +1)  #calculamos cuantos días duró cada ola de calor, dato que utilizaremos más adelante.
 
 olas 
@@ -96,14 +98,16 @@ Datos del INE en formato CSV (separado por punto y coma y codificado en latin1).
 
 ```{r importar-covid}
 
-covid_csv <- read_delim("INPUT/DATA/49923.csv", delim = ";", escape_double = FALSE, trim_ws = TRUE, locale = locale(encoding = "latin1", decimal_mark=",", grouping_mark="."), col_types = cols(Total = col_number())) 
+covid_csv <- read_delim("INPUT/DATA/49923.csv", 
+                        delim = ";", 
+                        escape_double = FALSE, 
+                        trim_ws = TRUE, 
+                        locale = locale(encoding = "latin1", decimal_mark=",", grouping_mark="."), 
+                        col_types = cols(Total = col_number())) 
                         
 covid <- covid_csv %>%
-  
   rename (ccaa_raw=2, muertes_covid = Total)%>%
-  
   filter(!is.na(ccaa_raw)) %>%   
-  
   mutate(ccaa = str_remove(ccaa_raw, "^\\d+\\s+"),       
          ccaa= case_match(ccaa,
            "Asturias, Principado de"      ~ "Asturias",
@@ -189,3 +193,9 @@ datos_unidos <- muertes %>%
 datos_unidos
 ```
   
+### Representaciones gráficas para comprobar la relación entre los datos
+
+
+
+
+
