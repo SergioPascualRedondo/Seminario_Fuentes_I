@@ -1,4 +1,5 @@
 library(tidyverse)
+library(jsonlite)
 
 #Tabla de días de ola por CCAA y ola (cada ola cuenta una vez por comunidad)
 olas_ccaa_ola <- olas %>%
@@ -36,11 +37,11 @@ G2 <- olas_prov %>%
 G2                       
 
 #Exportación de gráficos
-ggsave("Scripts/01_Analisis_Olas_Calor/G1_olas_CCAA.png",
+ggsave("SALIDA/FIGURAS/G1_olas_CCAA.png",
        plot = G1,                    
        width = 9, height = 6, dpi = 300) 
 
-ggsave("Scripts/01_Analisis_Olas_Calor/G2_olas_provincias.png",
+ggsave("SALIDA/FIGURAS/G2_olas_CCAA.png",
        plot = G2,                    
        width = 9, height = 8, dpi = 300) 
 
