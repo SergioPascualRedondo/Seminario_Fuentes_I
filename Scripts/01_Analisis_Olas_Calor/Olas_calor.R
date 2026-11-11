@@ -1,4 +1,4 @@
-library(tidyverse)
+Slibrary(tidyverse)
 library(jsonlite)
 
 Olas_json <- fromJSON("INPUT/DATA/olas_calor_provincias_2020.json",
@@ -153,11 +153,11 @@ G2 <- ggplot(data = Olas_provincia,
 G2                       
 
 #Exportación de gráficos
-ggsave("Scripts/01_Analisis_Olas_Calor/G1_olas_CCAA.png",
+ggsave("SALIDA/FIGURAS/G1_olas_CCAA.png",
        plot = G1,                    
        width = 9, height = 6, dpi = 300) 
 
-ggsave("Scripts/01_Analisis_Olas_Calor/G2_olas_provincias.png",
+ggsave("SALIDA/FIGURAS/G2_olas_CCAA.png",
        plot = G2,                    
        width = 9, height = 8, dpi = 300) 
 
