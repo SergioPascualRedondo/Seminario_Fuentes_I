@@ -246,7 +246,11 @@ datos_unidos <- muertes %>%
   select(ccaa, var_defunciones) %>%
   left_join(covid, by = "ccaa") %>%
   left_join(olas_ccaa, by = "ccaa") %>%
-  mutate(diferencia_muertes_NoCovd = var_defunciones - muertes_covid) #diferencia entre el aumento de defunciones respecto a 2019 en 2020 y las muertes atribuidas al COVID-19 (refleja el cambio neto, con respecto de 2019, en el resto de causas de muertes).
+  left_join(poblacion_2020, by = "ccaa") %>% #añadimos la población de cada comunidad autónoma
+  mutate(
+    diferencia_muertes_NoCovd = var_defunciones - muertes_covid, #diferencia entre el aumento de defunciones respecto a 2019 en 2020 y las muertes atribuidas al COVID-19 (refleja el cambio neto, con respecto de 2019, en el resto de causas de muertes)
+    defunciones_no_covid_100000 = diferencia_muertes_NoCovd / poblacion * 100000 #ajustamos la diferencia por el tamaño de la población y la expresamos por cada 100.000 habitantes
+  )
 
 datos_unidos
 ```
