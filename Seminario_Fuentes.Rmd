@@ -125,6 +125,19 @@ covid <- covid_csv %>%
 covid
 
 ```
+### Poblaciones España 1997-2021
+Datos del INE en formato pc.Axis.
+```{r importar-poblacion}
+poblacion_px <- pxR::read.px(
+  "INPUT/DATA/poblacion.px"
+)
+
+poblacion<- poblacion_px %>%
+  as.data.frame(stringsAsFactors = FALSE) %>%
+  as_tibble()
+
+poblacion
+```
 
 ## Preparación de los datos
 ### Cambio de provincias a comunidades autónomas
