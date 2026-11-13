@@ -140,12 +140,57 @@ poblacion
 ```
 
 ## Preparación de los datos
+### Preparación de la población de 2020
+
+Seleccionamos la población total de cada comunidad autónoma en 2020.
+Después, homogeneizamos sus nombres con los utilizados en las demás
+fuentes de datos.
+
+```{r preparar-poblacion}
+poblacion_2020 <- poblacion %>%
+  rename(
+    ccaa_raw = `Comunidades.y.Ciudades.Autónomas`
+  ) %>%
+  filter(
+    Periodo == "2020",
+    Sexo == "Total",
+    ccaa_raw != "Total"
+  ) %>%
+  transmute(
+    ccaa = case_when(
+      ccaa_raw == "01 Andalucía" ~ "Andalucía",
+      ccaa_raw == "02 Aragón" ~ "Aragón",
+      ccaa_raw == "03 Asturias, Principado de" ~ "Asturias",
+      ccaa_raw == "04 Balears, Illes" ~ "Islas Baleares",
+      ccaa_raw == "05 Canarias" ~ "Canarias",
+      ccaa_raw == "06 Cantabria" ~ "Cantabria",
+      ccaa_raw == "07 Castilla y León" ~ "Castilla y León",
+      ccaa_raw == "08 Castilla - La Mancha" ~ "Castilla-La Mancha",
+      ccaa_raw == "09 Cataluña" ~ "Cataluña",
+      ccaa_raw == "10 Comunitat Valenciana" ~ "Comunidad Valenciana",
+      ccaa_raw == "11 Extremadura" ~ "Extremadura",
+      ccaa_raw == "12 Galicia" ~ "Galicia",
+      ccaa_raw == "13 Madrid, Comunidad de" ~ "Madrid",
+      ccaa_raw == "14 Murcia, Región de" ~ "Murcia",
+      ccaa_raw == "15 Navarra, Comunidad Foral de" ~ "Navarra",
+      ccaa_raw == "16 País Vasco" ~ "País Vasco",
+      ccaa_raw == "17 Rioja, La" ~ "La Rioja",
+      ccaa_raw == "18 Ceuta" ~ "Ceuta",
+      ccaa_raw == "19 Melilla" ~ "Melilla",
+      .default = ccaa_raw
+    ),
+    poblacion = value
+  )
+
+poblacion_2020
+```
 ### Cambio de provincias a comunidades autónomas
 
 Nuestros datos de olas de calor vienen por provincia y las defunciones del INE (covid), al igual que las defunciones totales en 2020 por comunidad autónoma. Para poder relacionarlas, asignamos cada provincia a su comunidad autónoma y agrupamos las olas.
 
 
 ```{r prov-ccaa}
+
 prov_ccaa <- enframe(list(
   "Andalucía" = c("ALMERIA","CADIZ","CORDOBA","GRANADA","HUELVA","JAEN","MALAGA","SEVILLA"),
   "Aragón" = c("HUESCA","TERUEL","ZARAGOZA"),
