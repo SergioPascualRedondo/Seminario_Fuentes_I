@@ -310,7 +310,7 @@ En este gráfico una comunidad suma los días de una ola si al menos una de sus 
 
 Gráfico 2: número de olas por provincia 
 
-```{r g2-olas-provincia, fig.width=9, fig.height=8}
+```{r g2-olas-provincia, fig.width=7, fig.height=7}
 G2 <- olas_prov %>%
   filter(n_olas > 0) %>%
   ggplot(mapping = aes(x = reorder(provincia, n_olas), y = n_olas)) +
@@ -327,13 +327,17 @@ G2
 
 ```
 
+ANALIZAR RESULTADO
+
+
+
 (se muestran solo las provincias con ola de calor, las que no sufrieron ninguna ola no aparecen)
 
 **_Pregunta 2: ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?_**
 
 A la hora de responder esta pregunta y las que tienen relación con las defunciones y las comunidades autónomas, utilizaremos las siguientes variables teniendo en cuenta la población de cada ccaa (tasas por 100.000 habitantes).
 
-```{r tabla-tasas}
+```{r tabla-tasas} 
 datos_tasas <- datos_unidos %>%
   mutate(
     var_defuncion_100k = var_defunciones / poblacion * 1e5,
@@ -344,7 +348,10 @@ datos_tasas <- datos_unidos %>%
   )
 ```
 
-```{r g3-aumeto-defunciones-ccaa, fig.width=7, fig.height=7}
+```{r g3-aumeto-defunciones-ccaa, fig.width=7, fig.height=7} 
+
+#codigo extraido de Mortalidad_Covid.R
+
 G3 <- datos_tasas %>%
   mutate(ccaa = reorder(ccaa, var_defuncion_100k)) %>% 
   ggplot(mapping = aes(x = ccaa, y = var_defuncion_100k)) +
@@ -366,4 +373,85 @@ G3
 ```
 
 
+
+
+
+
+ANALIZAR RESULTADO
+
+
+
+
+
+
+
+
+```{r g4-aumento-defunciones-covid-y-resto, fig.width=7, fig.height=7}
+G4 <- muertes_causa %>%
+  ggplot(mapping = aes(x = reorder(ccaa, defunciones, sum),
+                       y = defunciones, fill = causa)) +
+  geom_col() +                                          
+  coord_flip() +                                        
+  scale_fill_manual(values = c("COVID-19" = "green",
+                               "No COVID-19" = "blue")) + 
+  labs(x = "CCAA",
+       y = "Aumento de defunciones por cada 100.000hab (2020 respecto a 2019)",
+       fill = "",
+       title = "Aumento de defunciones en 2020 por cada 100.000hab: COVID-19 y resto") +
+  theme_minimal()                                       
+
+G4 
+```
+
+
+
+
+ANALIZAR RESULTADO
+
+
+
+
+
+```{r g6-relacion-defuncionesCovid-aumentoTotal, fig.width=7, fig.height=7}
+#Gráfico 6:relación entre defunciones por covid y aumento total
+limites <- range(c(datos_tasas$var_defuncion_100k,
+                   datos_tasas$covid_100k), na.rm = TRUE)
+
+linea_referencia <- data.frame(
+  x_inicio = limites[1],
+  y_inicio = limites[1],
+  x_fin = limites[2],
+  y_fin = limites[2]
+)
+
+G6 <- datos_tasas %>%
+  ggplot(mapping = aes(x = var_defuncion_100k,
+                       y = covid_100k)) +       
+  geom_segment(data = linea_referencia,
+               mapping = aes(x = x_inicio, y = y_inicio,
+                             xend = x_fin, yend = y_fin),
+               inherit.aes = FALSE,
+               linetype = "dashed",
+               colour = "blue") +                
+  geom_point(size = 3, colour = "orange") +    
+  geom_text(mapping = aes(label = ccaa),
+            vjust = -0.8, size = 3,
+            check_overlap = TRUE) +                
+  labs(x = "Aumento total de defunciones por 100.000hab(2020 respecto a 2019)",
+       y = "Defunciones por COVID-19 por 100.000 hab",
+       title = "Defunciones por COVID-19 frente al aumento total",
+       caption = "Línea discontinua: el COVID-19 explica todo el aumento") +
+  theme_minimal()                                  
+
+G6 
+
+```
+
+
+
+
+ANALIZAR RESULTADO
+
+
+**_Pregunta 3: ¿Están relacionadas las olas de calor y el aumento de muertes con el COVID-19?_**
 

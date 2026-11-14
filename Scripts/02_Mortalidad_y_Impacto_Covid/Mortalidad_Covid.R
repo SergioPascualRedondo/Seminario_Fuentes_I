@@ -1,13 +1,13 @@
 library(tidyverse)
 
 #Gráfico 3: aumento de defunciones por CCAA
-G3 <- datos_unidos %>%
-  mutate(ccaa = reorder(ccaa, var_defunciones)) %>% 
-  ggplot(mapping = aes(x = ccaa, y = var_defunciones)) +
+G3 <- datos_tasas %>%
+  mutate(ccaa = reorder(ccaa, var_defuncion_100k)) %>% 
+  ggplot(mapping = aes(x = ccaa, y = var_defuncion_100k)) +
   geom_segment(mapping = aes(xend = ccaa, yend = 0),
                colour = "grey") +                
   geom_point(size = 4, colour = "lightblue") +     
-  geom_text(mapping = aes(label = var_defunciones),
+  geom_text(mapping = aes(label = var_defuncion_100k),
             hjust = -0.5, size = 3) +               
   coord_flip() +                                    
   scale_y_continuous(expand = expansion(mult = c(0, .15))) +
@@ -21,10 +21,10 @@ G3
 #Gráfico 4: aumento de defunciones por COVID y otras causas
 #Antes cremos una tabla para separar las muertes causadas por covid y por otras causas
 muertes_causa <- bind_rows(
-  datos_unidos %>% transmute(ccaa, causa = "COVID-19",
-                             defunciones = muertes_covid),
-  datos_unidos %>% transmute(ccaa, causa = "No COVID-19",
-                             defunciones = diferencia_muertes_NoCovd)
+  datos_tasas %>% transmute(ccaa, causa = "COVID-19",
+                             defunciones = covid_100k),
+  datos_tasas %>% transmute(ccaa, causa = "No COVID-19",
+                             defunciones = resto_100k)
 )
 
 G4 <- muertes_causa %>%
@@ -35,18 +35,18 @@ G4 <- muertes_causa %>%
   scale_fill_manual(values = c("COVID-19" = "green",
                                "No COVID-19" = "blue")) + 
   labs(x = "CCAA",
-       y = "Aumento de defunciones (2020 respecto a 2019)",
+       y = "Aumento de defunciones por cada 100.000hab (2020 respecto a 2019)",
        fill = "",
-       title = "Aumento de defunciones en 2020: COVID-19 y resto") +
+       title = "Aumento de defunciones en 2020 por cada 100.000hab: COVID-19 y resto") +
   theme_minimal()                                       
 
 G4   
 
 #Gráfico G5: proporción del aumento de defunciones correspondientes al covid.
-datos_g5 <- datos_unidos %>%
+datos_g5 <- datos_tasas %>%
   summarise(
-    COVID = sum(muertes_covid),                 
-    No_COVID = sum(diferencia_muertes_NoCovd)   
+    COVID = sum(covid_100k),                 
+    No_COVID = sum(resto_100k)   
   ) %>%
   pivot_longer(cols = everything(),             
                names_to = "causa",               
@@ -64,8 +64,8 @@ G5 <- ggplot(data = datos_g5,
 G5
 
 #Gráfico 6:relación entre defunciones por covid y aumento total
-limites <- range(c(datos_unidos$var_defunciones,
-                   datos_unidos$muertes_covid), na.rm = TRUE)
+limites <- range(c(datos_tasas$var_defuncion_100k,
+                   datos_tasas$covid_100k), na.rm = TRUE)
 
 linea_referencia <- data.frame(
   x_inicio = limites[1],
@@ -74,9 +74,9 @@ linea_referencia <- data.frame(
   y_fin = limites[2]
 )
 
-G6 <- datos_unidos %>%
-  ggplot(mapping = aes(x = var_defunciones,
-                       y = muertes_covid)) +       
+G6 <- datos_tasas %>%
+  ggplot(mapping = aes(x = var_defuncion_100k,
+                       y = covid_100k)) +       
   geom_segment(data = linea_referencia,
                mapping = aes(x = x_inicio, y = y_inicio,
                              xend = x_fin, yend = y_fin),
@@ -87,8 +87,8 @@ G6 <- datos_unidos %>%
   geom_text(mapping = aes(label = ccaa),
             vjust = -0.8, size = 3,
             check_overlap = TRUE) +                
-  labs(x = "Aumento total de defunciones (2020 respecto a 2019)",
-       y = "Defunciones por COVID-19",
+  labs(x = "Aumento total de defunciones por 100.000hab(2020 respecto a 2019)",
+       y = "Defunciones por COVID-19 por 100.000 hab",
        title = "Defunciones por COVID-19 frente al aumento total",
        caption = "Línea discontinua: el COVID-19 explica todo el aumento") +
   theme_minimal()                                  
