@@ -10,7 +10,7 @@ output:
 ---
 
 ```{r instalar, eval=FALSE}
-install.packages(c("tidyverse", "jsonlite", "tidyjson"))
+install.packages(c("tidyverse", "jsonlite", "tidyjson", "pxR"))
 ```
 
 
@@ -183,6 +183,7 @@ poblacion_2020 <- poblacion %>%
   )
 
 poblacion_2020
+
 ```
 ### Cambio de provincias a comunidades autónomas
 
@@ -254,16 +255,30 @@ datos_unidos <- muertes %>%
 
 datos_unidos
 ```
-  
-### Representaciones gráficas para comprobar la relación entre los datos
+ 
+### 1. Introducción
 
-Gráfico 1: días de ola por CCAA
+En nuestro seminario analizaremos si el aumento de muertes en 2020 respecto a 2019 en las distintas comunidades autónomas se relaciona con las olas de calor, teniendo en cuenta las muertes por COVID-19.
+
+
+### Representaciones gráficas 
+
+**_Pregunta 1: ¿Cuántas olas de calor y cuántos días de ola se registraron en 2020 en cada provincia y CCAA?_**
+
+Para responder a esta pregunta realizamos un gráfico de barras horizontales apiladas, en el cual representamos los días que duró cada ola de calor en cada comunidad autónoma. 
+
+En el eje x tenemos la duración en días de cada ola de calor y en el eje y la comunidad autónoma.
+
+
+Gráfico 1: días de ola por CCAA 
 
 ```{r g1-olas-ccaa, fig.width=9, fig.height=6}
 olas_ccaa_ola <- olas %>%
   left_join(prov_ccaa, by = "provincia") %>%
-  distinct(ccaa, id_ola, duracion_dias) %>%
-  mutate(ola = paste("Ola", id_ola))
+  distinct(ccaa, id_ola, fecha_inicio, fecha_fin, duracion_dias) %>%
+  mutate(ola = paste("Ola", id_ola, "(",
+                      format(fecha_inicio, "%d/%m"), " - ",
+                      format(fecha_fin, "%d/%m"), ")"))
 
 G1 <- ggplot(data = olas_ccaa_ola,
              mapping = aes(x = reorder(ccaa, duracion_dias, sum),
@@ -273,12 +288,23 @@ G1 <- ggplot(data = olas_ccaa_ola,
   scale_fill_brewer(palette = "YlOrRd") +
   scale_y_continuous(expand = expansion(mult = c(0, .1))) +
   labs(x = "CCAA", 
-       y = " Duración días ola de calor", 
+       y = "Duración días ola de calor", 
        title = "Días asociados a cada ola de calor por Comunidad Autónoma (2020)") +
   theme_classic()
 
 G1
 ```
+
+Vemos que en 2020 hubo 3 olas de calor que afectaron de maneras distintas a las comunidades autónomas. 
+
+
+- Castilla y León, Castilla-La Mancha y Andalucía sufrieron las 3 olas de calor, lo que suma aproximadamente unos 18 días de calor intenso.
+- Cataluña estuvo entre las olas 2 y 3 (15 días).
+- Madrid sufrió las olas 2 y 1 (12 días).
+- Galicia, las olas 3 y 1
+- Murcia, Baleares y la Comunidad Valenciana solo estuvieron en la ola 2  (9 días) y País Vasco, Navarra y Aragón solo en la ola 3 (6 días).
+
+En este gráfico una comunidad suma los días de una ola si al menos una de sus provincias fue afectada por la ola. Las comunidades autónomas que no aparecen no sufrieron ninguna ola.
 
 
 Gráfico 2: número de olas por provincia 
@@ -298,3 +324,6 @@ G2 <- olas_prov %>%
 G2
 
 
+```
+
+(se muestran solo las provincias con ola de calor, las que no sufrieron ninguna ola no aparecen)
