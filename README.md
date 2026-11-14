@@ -33,6 +33,25 @@ Analizar si el aumento de muertes en 2020 respecto a 2019 en las comunidades aut
 2. ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?
 3. ¿Qué parte de ese aumento corresponden a muertes por COVID-19?
 4. ¿Están relacionadas las olas de calor y el aumento de muertes con el COVID-19?
+## Metodología
+
+Se realiza un estudio descriptivo y exploratorio utilizando información
+agregada por provincia y comunidad autónoma. Los datos proceden de cuatro
+fuentes y se encuentran en diferentes formatos:
+
+- Datos de olas de calor por provincia en formato JSON.
+- Datos de variación de defunciones por comunidad autónoma en formato JSON.
+- Datos de muertes atribuidas a COVID-19 en formato CSV.
+- Datos de población por comunidad autónoma en formato PC-Axis.
+
+Las fuentes se importan, limpian y homogeneizan para utilizar nombres
+comunes de comunidades autónomas. Posteriormente, se integran mediante
+operaciones de unión y se calcula la variación de defunciones no atribuida
+a COVID-19 por cada 100.000 habitantes.
+
+El análisis permite detectar asociaciones y patrones territoriales, pero
+no establecer una relación causal entre las olas de calor y las
+defunciones.
 
 # 3. ESTRUCTURA DEL REPOSITORIO
 
