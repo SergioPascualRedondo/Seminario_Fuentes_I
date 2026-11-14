@@ -23,7 +23,7 @@ library(tidyjson)
 library(readr)
 ```
 
-Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 en las distintas comunidades autónomas y de las olas de calor por provincia. También importamos el archivo csv correspondiente a las muertes por covid en ese mismo año.  
+Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 en las distintas comunidades autónomas y de las olas de calor por provincia. También importamos el archivo csv correspondiente a las muertes por covid en ese mismo año y los datos de población (INE) de 202 en formato PC-Axis. 
 
 
 Definimos la función leer_json para que R ignore el carácter invisible (BOM) con el que empieza nuestro archivo JSON.
@@ -254,6 +254,7 @@ datos_unidos <- muertes %>%
   )
 
 datos_unidos
+
 ```
  
 ### 1. Introducción
@@ -327,3 +328,42 @@ G2
 ```
 
 (se muestran solo las provincias con ola de calor, las que no sufrieron ninguna ola no aparecen)
+
+**_Pregunta 2: ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?_**
+
+A la hora de responder esta pregunta y las que tienen relación con las defunciones y las comunidades autónomas, utilizaremos las siguientes variables teniendo en cuenta la población de cada ccaa (tasas por 100.000 habitantes).
+
+```{r tabla-tasas}
+datos_tasas <- datos_unidos %>%
+  mutate(
+    var_defuncion_100k = var_defunciones / poblacion * 1e5,
+    covid_100k = muertes_covid/ poblacion * 1e5,
+    resto_100k = defunciones_no_covid_100000,
+    pct_covid  = muertes_covid / var_defunciones #proporcion del aumento de defunciones de 2020 que corresponde al COVID.
+
+  )
+```
+
+```{r g3-aumeto-defunciones-ccaa, fig.width=7, fig.height=7}
+G3 <- datos_tasas %>%
+  mutate(ccaa = reorder(ccaa, var_defuncion_100k)) %>% 
+  ggplot(mapping = aes(x = ccaa, y = var_defuncion_100k)) +
+  geom_segment(mapping = aes(xend = ccaa, yend = 0),
+               colour = "grey") +                
+  geom_point(size = 4, colour = "lightblue") +     
+  geom_text(mapping = aes(label = round(var_defuncion_100k)),
+            hjust = -0.5, size = 3) +               
+  coord_flip() +                                    
+  scale_y_continuous(expand = expansion(mult = c(0, .15))) +
+  labs(x = "CCAA",
+       y = "Aumento de defunciones por 100.000 hab (2020 respecto a 2019)",
+       title = "Aumento de defunciones por Comunidad Autónoma, ajustado por población (2020)") +
+  theme_minimal()                                  
+
+G3  
+
+
+```
+
+
+
