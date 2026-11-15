@@ -35,27 +35,47 @@ Analizar si el aumento de muertes en 2020 respecto a 2019 en las comunidades aut
 4. ¿Están relacionadas las olas de calor y el aumento de muertes con el COVID-19?
 ## Metodología
 
-Se realiza un estudio descriptivo y exploratorio utilizando información
+Se realiza un estudio descriptivo y exploratorio de 2020 utilizando información
 agregada por provincia y comunidad autónoma. Los datos proceden de cuatro
 fuentes y se encuentran en diferentes formatos:
 
-- Datos de olas de calor por provincia en formato JSON.
-- Datos de variación de defunciones por comunidad autónoma en formato JSON.
-- Datos de muertes atribuidas a COVID-19 en formato CSV.
-- Datos de población por comunidad autónoma en formato PC-Axis.
+- Datos de olas de calor por provincia en formato JSON: listado de provincias afectadas en cada una de las tres olas de calor nacionales en 2020 según AEMET.
+- Datos de variación de defunciones por comunidad autónoma en formato JSON: aumento de defunciones en 2020 respecto a 2019, procedente del INE a través de epdata.
+- Datos de muertes atribuidas a COVID-19 en formato CSV: muertes por COVID-10 con virus identificado en 2020 por comunidad autónoma, del INE.
+- Datos de población por comunidad autónoma en formato PC-Axis: población de 2020, del INE.
 
-Las fuentes se importan, limpian y homogeneizan para utilizar nombres
-comunes de comunidades autónomas. Posteriormente, se integran mediante
-operaciones de unión y se calcula la variación de defunciones no atribuida
+Las fuentes se importan, limpian y homogeneizan en R para utilizar nombres comunes de comunidades autónomas. Las olas de calor, que vienen por provincia, se agrupan por comunidad
+calculando la media de días de ola por provincia. Posteriormente, se integran mediante operaciones de unión todas las fuentes y se calcula la variación de defunciones no atribuida 
 a COVID-19 por cada 100.000 habitantes.
 
-El análisis permite detectar asociaciones y patrones territoriales, pero
-no establecer una relación causal entre las olas de calor y las
-defunciones.
+El análisis permite detectar asociaciones y patrones territoriales, pero no establecer una relación causal entre las olas de calor y las defunciones.
 
 # 3. ESTRUCTURA DEL REPOSITORIO
 
+Para mantener el orden en nuestro trabajo, hemos organizado los archivos en distintas carpetas y documentos:
 
+- **Seminario_Fuentes.Rmd**: documento principal en R Markdown. Contiene todo el trabajo: introducción, objetivos, metodología (importación, limpieza y unión de los datos), 
+gráficos y su análisis correspondiente. 
+
+
+- **Seminario_Fuentes.html**: resultado al ejecutar (knit) el .Rmd. Es la versión final para leer en el navegador.
+
+
+- **INPUT/DATA**: datos originales, sin modificar.
+  - `olas_calor_provincias_2020.json`
+  - `muertes_comunidad_autonoma_2020.json`
+  - `49923.csv`: defunciones por COVID-19 por ccaa.
+  - `poblacion.px`: población por ccaa
+
+
+- **SALIDA**: gráficos exportados en formato PNG, para consultarlos sin ejecutar el código
+
+
+
+- **Scripts**:borradores de los gráficos, que cada miembro del grupo desarrolló antes de integrarlos en el `.Rmd`.
+  - `01_Analisis_Olas_Calor`: exposición al calor (días de ola por comunidad y olas por provincia).
+  - `02_Mortalidad-y_Impacto_Covid`: aumento de defunciones y peso del COVID-19.
+  - `03_Interaccion_Calor_Mortalidad`: relacion entre las olas de calor y las defunciones no atribuidas al COVID-19.
 
 
 # 4. RESULTADOS
