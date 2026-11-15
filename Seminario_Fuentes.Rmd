@@ -121,7 +121,16 @@ covid <- covid_csv %>%
 covid
 
 ```
+### Defunciones semanales por comunidad autónoma
 
+Los datos proceden de la Estimación del número de defunciones semanales del Instituto Nacional de Estadística. El archivo contiene las defunciones registradas durante cada semana de 2020 para todas las comunidades autónomas.
+
+```{r importar-defunciones-semanales}
+muertes_semana_json <- jsonlite::fromJSON(
+  "INPUT/DATA/muertes_semana.json",
+  simplifyVector = FALSE
+)
+```
 ### Poblaciones España 1997-2021
 
 Datos del INE en formato pc.Axis.
