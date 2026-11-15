@@ -13,7 +13,6 @@ output:
 install.packages(c("tidyverse", "jsonlite", "tidyjson", "pxR"))
 ```
 
-
 ```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
@@ -23,8 +22,7 @@ library(tidyjson)
 library(readr)
 ```
 
-Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 en las distintas comunidades autónomas y de las olas de calor por provincia. También importamos el archivo csv correspondiente a las muertes por covid en ese mismo año y los datos de población (INE) de 202 en formato PC-Axis. 
-
+Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 en las distintas comunidades autónomas y de las olas de calor por provincia. También importamos el archivo csv correspondiente a las muertes por covid en ese mismo año y los datos de población (INE) de 202 en formato PC-Axis.
 
 Definimos la función leer_json para que R ignore el carácter invisible (BOM) con el que empieza nuestro archivo JSON.
 
@@ -39,7 +37,7 @@ leer_json <- function(ruta) {
 
 ### Aumento de muertes en 2020 respecto a 2019 por comunidad autónoma
 
-Nuestro json de muertes en 2020 por CCAA está anidado, así que para poder imporar los datos que nos interesan lo hacemos de la siguiente manera: 
+Nuestro json de muertes en 2020 por CCAA está anidado, así que para poder imporar los datos que nos interesan lo hacemos de la siguiente manera:
 
 ```{r importar-muertes}
 muertes_json <- leer_json("INPUT/DATA/muertes_comunidad_autonoma_2020.json")
@@ -66,9 +64,7 @@ muertes <- muertes_json %>%
 muertes
 ```
 
-
 ### Olas de calor por provincia
-
 
 ```{r importar-olas}
 olas_json <- leer_json("INPUT/DATA/olas_calor_provincias_2020.json")
@@ -125,8 +121,11 @@ covid <- covid_csv %>%
 covid
 
 ```
+
 ### Poblaciones España 1997-2021
+
 Datos del INE en formato pc.Axis.
+
 ```{r importar-poblacion}
 poblacion_px <- pxR::read.px(
   "INPUT/DATA/poblacion.px"
@@ -140,11 +139,10 @@ poblacion
 ```
 
 ## Preparación de los datos
+
 ### Preparación de la población de 2020
 
-Seleccionamos la población total de cada comunidad autónoma en 2020.
-Después, homogeneizamos sus nombres con los utilizados en las demás
-fuentes de datos.
+Seleccionamos la población total de cada comunidad autónoma en 2020. Después, homogeneizamos sus nombres con los utilizados en las demás fuentes de datos.
 
 ```{r preparar-poblacion}
 poblacion_2020 <- poblacion %>%
@@ -185,10 +183,10 @@ poblacion_2020 <- poblacion %>%
 poblacion_2020
 
 ```
+
 ### Cambio de provincias a comunidades autónomas
 
 Nuestros datos de olas de calor vienen por provincia y las defunciones del INE (covid), al igual que las defunciones totales en 2020 por comunidad autónoma. Para poder relacionarlas, asignamos cada provincia a su comunidad autónoma y agrupamos las olas.
-
 
 ```{r prov-ccaa}
 
@@ -256,22 +254,20 @@ datos_unidos <- muertes %>%
 datos_unidos
 
 ```
- 
+
 ### 1. Introducción
 
 En nuestro seminario analizaremos si el aumento de muertes en 2020 respecto a 2019 en las distintas comunidades autónomas se relaciona con las olas de calor, teniendo en cuenta las muertes por COVID-19.
 
+### Representaciones gráficas
 
-### Representaciones gráficas 
+***Pregunta 1: ¿Cuántas olas de calor y cuántos días de ola se registraron en 2020 en cada provincia y CCAA?***
 
-**_Pregunta 1: ¿Cuántas olas de calor y cuántos días de ola se registraron en 2020 en cada provincia y CCAA?_**
+**Gráfico 1: días de ola por CCAA**
 
-Para responder a esta pregunta realizamos un gráfico de barras horizontales apiladas, en el cual representamos los días que duró cada ola de calor en cada comunidad autónoma. 
+Para responder a esta pregunta realizamos un gráfico de barras horizontales apiladas, en el cual representamos los días que duró cada ola de calor en cada comunidad autónoma.
 
 En el eje x tenemos la duración en días de cada ola de calor y en el eje y la comunidad autónoma.
-
-
-Gráfico 1: días de ola por CCAA 
 
 ```{r g1-olas-ccaa, fig.width=9, fig.height=6}
 olas_ccaa_ola <- olas %>%
@@ -296,19 +292,19 @@ G1 <- ggplot(data = olas_ccaa_ola,
 G1
 ```
 
-Vemos que en 2020 hubo 3 olas de calor que afectaron de maneras distintas a las comunidades autónomas. 
-
+Vemos que en 2020 hubo 3 olas de calor que afectaron de maneras distintas a las comunidades autónomas.
 
 - Castilla y León, Castilla-La Mancha y Andalucía sufrieron las 3 olas de calor, lo que suma aproximadamente unos 18 días de calor intenso.
 - Cataluña estuvo entre las olas 2 y 3 (15 días).
 - Madrid sufrió las olas 2 y 1 (12 días).
 - Galicia, las olas 3 y 1
-- Murcia, Baleares y la Comunidad Valenciana solo estuvieron en la ola 2  (9 días) y País Vasco, Navarra y Aragón solo en la ola 3 (6 días).
+- Murcia, Baleares y la Comunidad Valenciana solo estuvieron en la ola 2 (9 días) y País Vasco, Navarra y Aragón solo en la ola 3 (6 días).
 
 En este gráfico una comunidad suma los días de una ola si al menos una de sus provincias fue afectada por la ola. Las comunidades autónomas que no aparecen no sufrieron ninguna ola.
 
+**Gráfico 2: número de olas por provincia**
 
-Gráfico 2: número de olas por provincia 
+En este otro gráfico también utilizamos un diagrama de barras horizontales en el que representamos en el eje x en número de olas de calor y en el eje y las distintas provincias.
 
 ```{r g2-olas-provincia, fig.width=7, fig.height=7}
 G2 <- olas_prov %>%
@@ -327,17 +323,45 @@ G2
 
 ```
 
-ANALIZAR RESULTADO
+Según el número de olas de calor de 2020 (hubo tres) en las que figura cada provincia:
+
+- **Las 3 olas:** Toledo, Segovia, Málaga, Jaén, Cuenca, Cádiz y Almería.
+- **2 olas:** Zamora, Valladolid, Soria, Salamanca, Ourense, Madrid, Lleida, León, Guadalajara, Granada, Girona, Ciudad Real y Barcelona.
+- **1 ola:** Zaragoza, Teruel, Tarragona, Palencia, Navarra, Murcia, Lugo, Huesca, Burgos, Baleares, Ávila, Álava, Alicante y Albacete.
+
+El resto de provincias no aparecen en el gráfico porque no figuran en ninguna de las tres olas. Este gráfico cuenta en cuántas olas está cada provincia, pero no mide la intensidad del calor, una provincia incluida en una ola a lo mejor no tuvo ola de calor todos los días del intervalo.
+
+***Pregunta 2: ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?***
 
 
+```{r g3-aumeto-defunciones-ccaa, fig.width=7, fig.height=7}
 
-(se muestran solo las provincias con ola de calor, las que no sufrieron ninguna ola no aparecen)
+#codigo extraido de Mortalidad_Covid.R
 
-**_Pregunta 2: ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?_**
+G3 <- datos_unidos %>%
+  mutate(ccaa = reorder(ccaa, var_defunciones)) %>% 
+  ggplot(mapping = aes(x = ccaa, y = var_defunciones)) +
+  geom_segment(mapping = aes(xend = ccaa, yend = 0),
+               colour = "grey") +                
+  geom_point(size = 4, colour = "lightblue") +     
+  geom_text(mapping = aes(label = round(var_defunciones)),
+            hjust = -0.5, size = 3) +               
+  coord_flip() +                                    
+  scale_y_continuous(expand = expansion(mult = c(0, .15))) +
+  labs(x = "CCAA",
+       y = "Aumento de defunciones por 100.000 hab (2020 respecto a 2019)",
+       title = "Aumento de defunciones por Comunidad Autónoma, ajustado por población (2020)") +
+  theme_minimal()                                  
+
+G3  
+
+
+```
+
 
 A la hora de responder esta pregunta y las que tienen relación con las defunciones y las comunidades autónomas, utilizaremos las siguientes variables teniendo en cuenta la población de cada ccaa (tasas por 100.000 habitantes).
 
-```{r tabla-tasas} 
+```{r tabla-tasas}
 datos_tasas <- datos_unidos %>%
   mutate(
     var_defuncion_100k = var_defunciones / poblacion * 1e5,
@@ -348,7 +372,13 @@ datos_tasas <- datos_unidos %>%
   )
 ```
 
-```{r g3-aumeto-defunciones-ccaa, fig.width=7, fig.height=7} 
+Para responder esta pregunta realizamos los siguientes gráficos:
+
+**Gráfico 3: Aumento de defunciones por ccaa en 2020 respecto 2019**
+
+Utilizamos un gráfico de puntos ordenado, en el eje x representamos el aumento de defunciones por cada 100.000 hab en 2020 respecto 2019 y en el eje y las comunidades autónomas
+
+```{r g3-aumeto-defunciones-ccaa, fig.width=7, fig.height=7}
 
 #codigo extraido de Mortalidad_Covid.R
 
@@ -371,19 +401,11 @@ G3
 
 
 ```
+Al ajustar por población, el aumento de muertes en 2020 respecto a 2019 varía mucho entre comunidades: 47 defunciones más por cada 100.000 habitantes en Canarias hasta 345 en Castilla y León. 
 
+El ajuste por cada 100.000 habitantes modifica el orden respecto a las cifras absolutas. Madrid y Cataluña eran las comunidades que más sumaban, pero en parte por su tamaño: por habitante, Castilla y León y Castilla-La Mancha las superan. Ocurre igual en Andalucía, que pasa de ser tercera en cifras absolutas a situarse en 108 por 100.000 habitantes.
 
-
-
-
-
-ANALIZAR RESULTADO
-
-
-
-
-
-
+Este gráfico recoge el aumento total de defunciones, que incluye las muertes por COVID-19, y en 2020 el COVID-19 tuvo una primera ola muy intensa en primavera, antes de las olas de calor de verano. Por eso no permite atribuir estas diferencias al calor. En los siguientes gráficos analizamos las defunciones por separado.
 
 
 ```{r g4-aumento-defunciones-covid-y-resto, fig.width=7, fig.height=7}
@@ -403,14 +425,7 @@ G4 <- muertes_causa %>%
 G4 
 ```
 
-
-
-
 ANALIZAR RESULTADO
-
-
-
-
 
 ```{r g6-relacion-defuncionesCovid-aumentoTotal, fig.width=7, fig.height=7}
 #Gráfico 6:relación entre defunciones por covid y aumento total
@@ -447,11 +462,6 @@ G6
 
 ```
 
-
-
-
 ANALIZAR RESULTADO
 
-
-**_Pregunta 3: ¿Están relacionadas las olas de calor y el aumento de muertes con el COVID-19?_**
-
+***Pregunta 3: ¿Están relacionadas las olas de calor y el aumento de muertes con el COVID-19?***
