@@ -1,0 +1,1261 @@
+[{"COD":"EDES52", "Nombre":"Total Nacional. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":16473, "T3_Variable":"Total Nacional", "Nombre":"Total Nacional", "Codigo":"00"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":9541.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":9038.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":9308.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":9553.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":9555.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":9563.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":9715.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":10043.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":10332.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":9614.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":9491.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":8608.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":8613.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":8208.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":8090.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":8191.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":8024.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":7796.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":7971.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":7916.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":8193.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":8417.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":8615.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":7847.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":7584.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":7759.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":7652.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":7527.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":7047.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":6861.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":7154.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":7637.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":7659.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":7546.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":8475.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":9025.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":10473.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":13260.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":17347.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":20989.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":19862.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":12891.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":9520.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":8504.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":8426.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":8441.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":8882.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":9245.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":10010.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":10014.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":9964.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":9444.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":8761.0}
+]
+}
+,{"COD":"EDES123", "Nombre":"Andalucía. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":8997, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Andalucía", "Codigo":"01"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":1596.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":1557.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":1604.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":1578.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":1703.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":1691.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":1797.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":1913.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":1899.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":1764.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":1708.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":1452.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":1478.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":1321.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":1328.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":1323.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":1393.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":1312.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":1350.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":1284.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":1362.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":1423.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":1468.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":1385.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":1353.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":1358.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":1354.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":1314.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":1170.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":1169.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":1186.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":1314.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":1343.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":1230.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":1284.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":1276.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":1368.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":1530.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":1743.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":1865.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":1829.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":1655.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":1499.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":1370.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":1417.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":1442.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":1601.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":1643.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":1796.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":1785.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":1792.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":1645.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":1535.0}
+]
+}
+,{"COD":"EDES122", "Nombre":"Aragón. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":8998, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Aragón", "Codigo":"02"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":311.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":293.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":299.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":340.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":314.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":368.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":385.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":426.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":484.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":328.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":349.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":298.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":298.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":287.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":299.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":326.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":275.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":304.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":280.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":333.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":342.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":339.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":328.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":282.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":275.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":239.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":266.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":253.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":225.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":219.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":223.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":244.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":207.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":248.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":295.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":309.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":319.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":439.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":536.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":612.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":492.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":322.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":283.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":266.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":293.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":243.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":294.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":314.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":346.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":322.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":320.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":334.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":277.0}
+]
+}
+,{"COD":"EDES121", "Nombre":"Asturias, Principado de. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":8999, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Asturias, Principado de", "Codigo":"03"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":299.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":275.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":315.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":343.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":355.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":387.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":381.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":417.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":386.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":306.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":314.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":251.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":241.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":208.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":214.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":252.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":219.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":231.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":241.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":238.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":264.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":252.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":242.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":225.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":213.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":202.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":204.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":248.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":245.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":216.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":253.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":249.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":232.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":250.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":249.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":271.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":308.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":297.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":359.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":315.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":353.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":292.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":250.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":279.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":232.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":262.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":271.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":280.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":321.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":318.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":348.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":297.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":285.0}
+]
+}
+,{"COD":"EDES120", "Nombre":"Balears, Illes. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9000, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Balears, Illes", "Codigo":"04"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":187.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":177.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":216.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":174.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":179.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":178.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":136.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":160.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":165.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":156.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":169.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":168.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":142.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":154.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":156.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":157.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":161.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":161.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":181.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":170.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":171.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":149.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":165.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":117.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":168.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":143.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":153.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":141.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":141.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":127.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":129.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":147.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":136.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":130.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":152.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":155.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":159.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":183.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":193.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":188.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":195.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":197.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":176.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":168.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":173.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":160.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":179.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":181.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":184.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":180.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":172.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":166.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":168.0}
+]
+}
+,{"COD":"EDES119", "Nombre":"Canarias. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9001, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Canarias", "Codigo":"05"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":296.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":328.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":359.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":322.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":287.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":304.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":314.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":298.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":300.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":292.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":313.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":288.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":293.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":275.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":317.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":282.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":340.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":336.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":358.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":313.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":307.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":283.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":256.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":289.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":283.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":291.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":239.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":254.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":300.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":274.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":302.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":286.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":286.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":298.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":290.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":269.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":286.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":325.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":315.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":396.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":384.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":331.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":355.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":290.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":330.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":350.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":363.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":406.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":406.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":382.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":389.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":335.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":331.0}
+]
+}
+,{"COD":"EDES118", "Nombre":"Cantabria. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9002, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Cantabria", "Codigo":"06"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":139.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":121.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":134.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":157.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":131.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":132.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":116.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":132.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":134.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":123.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":113.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":114.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":119.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":102.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":111.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":106.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":93.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":119.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":107.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":113.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":132.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":98.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":122.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":114.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":123.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":114.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":103.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":104.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":101.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":90.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":96.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":117.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":94.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":103.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":105.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":125.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":143.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":166.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":178.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":194.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":136.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":129.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":128.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":125.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":125.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":126.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":110.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":140.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":126.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":138.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":146.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":161.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":125.0}
+]
+}
+,{"COD":"EDES117", "Nombre":"Castilla y León. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9003, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Castilla y León", "Codigo":"07"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":568.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":607.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":656.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":709.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":747.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":745.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":741.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":822.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":786.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":693.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":738.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":663.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":646.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":593.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":590.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":543.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":553.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":511.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":564.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":515.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":579.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":616.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":612.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":584.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":557.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":562.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":569.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":562.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":522.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":486.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":555.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":565.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":547.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":512.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":646.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":675.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":869.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":1109.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":1504.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":1784.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":1597.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":941.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":619.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":555.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":572.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":567.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":590.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":563.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":675.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":675.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":669.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":600.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":569.0}
+]
+}
+,{"COD":"EDES116", "Nombre":"Castilla - La Mancha. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9004, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Castilla - La Mancha", "Codigo":"08"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":414.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":404.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":402.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":454.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":418.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":432.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":448.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":440.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":459.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":485.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":444.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":406.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":425.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":377.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":394.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":378.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":363.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":343.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":346.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":316.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":362.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":425.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":460.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":384.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":337.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":386.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":396.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":369.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":323.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":304.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":325.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":373.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":387.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":351.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":426.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":464.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":606.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":844.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":1257.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":1861.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":1816.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":870.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":485.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":396.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":357.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":378.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":418.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":440.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":476.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":487.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":429.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":400.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":391.0}
+]
+}
+,{"COD":"EDES115", "Nombre":"Cataluña. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9005, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Cataluña", "Codigo":"09"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":1667.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":1477.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":1472.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":1498.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":1556.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":1533.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":1520.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":1603.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":1669.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":1524.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":1451.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":1311.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":1327.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":1191.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":1122.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":1169.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":1148.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":1118.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":1156.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":1222.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":1278.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":1292.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":1315.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":1171.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":1053.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":1178.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":1150.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":1080.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":1069.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":1066.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":1042.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":1149.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":1185.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":1201.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":1424.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":1708.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":2114.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":2783.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":3652.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":4169.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":3744.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":2013.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":1425.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":1357.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":1305.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":1298.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":1341.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":1339.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":1436.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":1484.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":1440.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":1516.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":1358.0}
+]
+}
+,{"COD":"EDES114", "Nombre":"Comunitat Valenciana. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9006, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Comunitat Valenciana", "Codigo":"10"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":1155.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":1064.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":1063.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":1075.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":1018.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":979.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":979.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":930.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":964.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":889.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":923.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":886.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":812.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":828.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":827.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":827.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":802.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":875.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":877.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":902.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":917.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":923.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":945.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":800.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":818.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":850.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":831.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":765.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":779.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":783.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":781.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":772.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":819.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":729.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":866.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":905.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":869.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":1009.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":1192.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":1350.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":1322.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":995.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":899.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":929.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":919.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":918.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":880.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":976.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":1070.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":1045.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":1115.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":961.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":871.0}
+]
+}
+,{"COD":"EDES113", "Nombre":"Extremadura. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9007, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Extremadura", "Codigo":"11"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":249.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":234.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":225.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":250.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":269.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":259.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":252.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":230.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":274.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":288.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":242.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":240.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":250.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":224.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":208.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":203.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":213.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":196.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":232.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":215.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":229.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":243.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":240.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":254.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":270.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":220.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":211.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":231.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":207.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":188.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":187.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":228.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":216.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":239.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":233.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":249.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":239.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":318.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":413.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":434.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":399.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":274.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":269.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":213.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":239.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":252.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":225.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":227.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":274.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":276.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":292.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":272.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":245.0}
+]
+}
+,{"COD":"EDES112", "Nombre":"Galicia. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9008, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Galicia", "Codigo":"12"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":683.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":638.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":593.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":721.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":680.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":629.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":635.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":669.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":677.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":656.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":665.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":596.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":567.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":635.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":550.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":590.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":601.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":533.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":513.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":585.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":589.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":584.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":564.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":560.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":570.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":593.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":545.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":528.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":496.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":489.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":500.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":573.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":555.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":519.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":582.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":605.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":602.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":663.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":778.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":861.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":710.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":690.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":655.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":656.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":624.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":637.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":724.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":720.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":781.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":768.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":735.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":754.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":695.0}
+]
+}
+,{"COD":"EDES111", "Nombre":"Madrid, Comunidad de. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9009, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Madrid, Comunidad de", "Codigo":"13"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":1010.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":960.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":939.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":938.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":913.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":945.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":993.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":973.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":1062.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":1068.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":1117.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":1085.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":1090.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":1108.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":1116.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":1057.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":1023.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":895.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":916.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":849.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":811.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":940.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":1042.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":884.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":806.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":888.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":866.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":870.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":764.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":767.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":781.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":858.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":891.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":951.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":1055.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":1161.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":1616.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":2398.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":3771.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":5295.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":5342.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":3070.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":1515.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":980.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":902.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":940.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":956.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":1017.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":1053.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":1081.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":1062.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":1034.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":950.0}
+]
+}
+,{"COD":"EDES110", "Nombre":"Murcia, Región de. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9010, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Murcia, Región de", "Codigo":"14"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":282.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":259.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":281.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":239.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":240.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":251.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":261.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":280.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":280.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":281.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":240.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":207.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":235.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":228.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":229.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":229.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":212.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":252.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":224.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":216.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":214.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":237.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":234.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":216.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":208.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":197.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":209.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":216.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":184.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":197.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":217.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":177.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":177.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":224.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":240.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":229.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":227.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":229.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":239.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":276.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":289.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":236.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":216.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":226.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":247.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":226.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":233.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":279.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":276.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":283.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":289.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":252.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":246.0}
+]
+}
+,{"COD":"EDES109", "Nombre":"Navarra, Comunidad Foral de. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9011, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Navarra, Comunidad Foral de", "Codigo":"15"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":120.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":101.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":158.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":116.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":127.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":108.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":161.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":117.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":149.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":139.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":134.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":118.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":151.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":113.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":114.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":125.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":101.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":105.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":95.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":121.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":113.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":94.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":105.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":87.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":86.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":98.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":101.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":107.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":88.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":82.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":99.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":99.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":95.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":93.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":103.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":113.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":136.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":191.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":250.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":317.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":290.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":147.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":117.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":123.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":143.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":110.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":114.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":118.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":133.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":144.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":135.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":113.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":131.0}
+]
+}
+,{"COD":"EDES108", "Nombre":"País Vasco. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9012, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"País Vasco", "Codigo":"16"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":466.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":443.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":486.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":531.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":510.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":499.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":483.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":502.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":509.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":474.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":451.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":415.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":427.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":451.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":417.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":489.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":405.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":399.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":427.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":427.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":430.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":408.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":410.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":411.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":364.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":341.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":359.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":381.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":347.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":327.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":389.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":399.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":388.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":387.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":419.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":416.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":485.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":637.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":779.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":850.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":765.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":569.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":494.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":436.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":413.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":419.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":460.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":450.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":512.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":483.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":491.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":478.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":431.0}
+]
+}
+,{"COD":"EDES107", "Nombre":"Rioja, La. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9013, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Rioja, La", "Codigo":"17"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":58.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":60.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":67.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":65.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":71.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":67.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":66.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":81.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":76.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":88.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":73.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":76.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":63.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":67.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":60.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":87.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":72.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":67.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":59.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":50.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":51.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":58.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":62.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":53.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":61.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":42.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":55.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":63.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":52.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":49.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":62.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":60.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":65.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":51.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":74.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":54.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":86.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":103.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":144.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":167.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":132.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":92.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":69.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":74.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":61.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":60.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":52.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":69.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":83.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":75.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":61.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":57.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":77.0}
+]
+}
+,{"COD":"EDES106", "Nombre":"Ceuta. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":9015, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Ceuta", "Codigo":"18"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":11.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":19.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":20.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":20.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":5.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":14.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":8.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":8.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":8.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":7.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":6.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":14.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":15.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":6.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":8.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":8.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":11.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":21.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":14.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":18.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":15.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":15.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":19.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":16.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":11.0}
+]
+}
+,{"COD":"EDES124", "Nombre":"Melilla. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":8995, "T3_Variable":"Comunidades y Ciudades Autónomas", "Nombre":"Melilla", "Codigo":"19"}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":11.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":6.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":5.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":11.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":14.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":15.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":18.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":23.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":22.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":11.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":16.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":7.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":8.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":20.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":6.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":18.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":5.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":5.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":16.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":6.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":8.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":4.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":11.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":6.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":7.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":11.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":21.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":14.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":8.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":8.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":15.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":14.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":9.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":16.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":14.0}
+]
+}
+,{"COD":"EDES37897", "Nombre":"No residente. Total. Todas las edades. Dato base. ", "T3_Unidad":"Personas", "T3_Escala":" ", "MetaData":[{"Id":416366, "T3_Variable":"Total Nacional", "Nombre":"No residente", "Codigo":""}
+,{"Id":451, "T3_Variable":"Sexo", "Nombre":"Total", "Codigo":""}
+,{"Id":15668, "T3_Variable":"Totales de edad", "Nombre":"Todas las edades", "Codigo":""}
+,{"Id":72, "T3_Variable":"Tipo de dato", "Nombre":"Dato base", "Codigo":""}
+]
+, "Data":[{"Fecha":"2020-12-31T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM53", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-12-24T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM52", "Anyo":2020, "Valor":23.0}
+,{"Fecha":"2020-12-17T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM51", "Anyo":2020, "Valor":21.0}
+,{"Fecha":"2020-12-10T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM50", "Anyo":2020, "Valor":19.0}
+,{"Fecha":"2020-12-03T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM49", "Anyo":2020, "Valor":14.0}
+,{"Fecha":"2020-11-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM48", "Anyo":2020, "Valor":29.0}
+,{"Fecha":"2020-11-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM47", "Anyo":2020, "Valor":20.0}
+,{"Fecha":"2020-11-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM46", "Anyo":2020, "Valor":13.0}
+,{"Fecha":"2020-11-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM45", "Anyo":2020, "Valor":16.0}
+,{"Fecha":"2020-10-29T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM44", "Anyo":2020, "Valor":18.0}
+,{"Fecha":"2020-10-22T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM43", "Anyo":2020, "Valor":21.0}
+,{"Fecha":"2020-10-15T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM42", "Anyo":2020, "Valor":14.0}
+,{"Fecha":"2020-10-08T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM41", "Anyo":2020, "Valor":20.0}
+,{"Fecha":"2020-10-01T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM40", "Anyo":2020, "Valor":20.0}
+,{"Fecha":"2020-09-24T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM39", "Anyo":2020, "Valor":26.0}
+,{"Fecha":"2020-09-17T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM38", "Anyo":2020, "Valor":23.0}
+,{"Fecha":"2020-09-10T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM37", "Anyo":2020, "Valor":26.0}
+,{"Fecha":"2020-09-03T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM36", "Anyo":2020, "Valor":19.0}
+,{"Fecha":"2020-08-27T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM35", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-08-20T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM34", "Anyo":2020, "Valor":30.0}
+,{"Fecha":"2020-08-13T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM33", "Anyo":2020, "Valor":23.0}
+,{"Fecha":"2020-08-06T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM32", "Anyo":2020, "Valor":23.0}
+,{"Fecha":"2020-07-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM31", "Anyo":2020, "Valor":26.0}
+,{"Fecha":"2020-07-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM30", "Anyo":2020, "Valor":20.0}
+,{"Fecha":"2020-07-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM29", "Anyo":2020, "Valor":22.0}
+,{"Fecha":"2020-07-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM28", "Anyo":2020, "Valor":27.0}
+,{"Fecha":"2020-07-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM27", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-06-25T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM26", "Anyo":2020, "Valor":15.0}
+,{"Fecha":"2020-06-18T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM25", "Anyo":2020, "Valor":15.0}
+,{"Fecha":"2020-06-11T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM24", "Anyo":2020, "Valor":12.0}
+,{"Fecha":"2020-06-04T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM23", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-05-28T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM22", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-05-21T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM21", "Anyo":2020, "Valor":16.0}
+,{"Fecha":"2020-05-14T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM20", "Anyo":2020, "Valor":10.0}
+,{"Fecha":"2020-05-07T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM19", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-04-30T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM18", "Anyo":2020, "Valor":17.0}
+,{"Fecha":"2020-04-23T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM17", "Anyo":2020, "Valor":21.0}
+,{"Fecha":"2020-04-16T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM16", "Anyo":2020, "Valor":16.0}
+,{"Fecha":"2020-04-09T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM15", "Anyo":2020, "Valor":22.0}
+,{"Fecha":"2020-04-02T00:00:00.000+02:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM14", "Anyo":2020, "Valor":22.0}
+,{"Fecha":"2020-03-26T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM13", "Anyo":2020, "Valor":34.0}
+,{"Fecha":"2020-03-19T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM12", "Anyo":2020, "Valor":48.0}
+,{"Fecha":"2020-03-12T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM11", "Anyo":2020, "Valor":39.0}
+,{"Fecha":"2020-03-05T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM10", "Anyo":2020, "Valor":39.0}
+,{"Fecha":"2020-02-27T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM09", "Anyo":2020, "Valor":47.0}
+,{"Fecha":"2020-02-20T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM08", "Anyo":2020, "Valor":28.0}
+,{"Fecha":"2020-02-13T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM07", "Anyo":2020, "Valor":43.0}
+,{"Fecha":"2020-02-06T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM06", "Anyo":2020, "Valor":53.0}
+,{"Fecha":"2020-01-30T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM05", "Anyo":2020, "Valor":36.0}
+,{"Fecha":"2020-01-23T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM04", "Anyo":2020, "Valor":60.0}
+,{"Fecha":"2020-01-16T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM03", "Anyo":2020, "Valor":47.0}
+,{"Fecha":"2020-01-09T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM02", "Anyo":2020, "Valor":46.0}
+,{"Fecha":"2020-01-02T00:00:00.000+01:00", "T3_TipoDato":"Definitivo", "T3_Periodo":"SM01", "Anyo":2020, "Valor":51.0}
+]
+}
+]
