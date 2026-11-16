@@ -45,8 +45,7 @@ G1 <- ggplot(
     fill = ola
   )
 ) +
-  geom_col() +
-  coord_flip() +
+  geom_col(position = position_dodge(preserve = "single")) +
   scale_fill_brewer(
     palette = "YlOrRd"
   ) +
@@ -64,19 +63,20 @@ G1 <- ggplot(
       "por comunidad autónoma (2020)"
     )
   ) +
-  theme_classic()
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ 
 
 
 G1
 
 
-# ============================================================
-#
-# NÚMERO DE OLAS DE CALOR POR PROVINCIA
-# ============================================================
 
-# Se muestran únicamente las provincias que registraron
-# al menos una ola de calor.
+
+# NÚMERO DE OLAS DE CALOR POR PROVINCIA
+
+# Se muestran únicamente las provincias que registraron al menos una ola de calor.
 
 G2 <- olas_prov %>%
   filter(
@@ -100,7 +100,7 @@ G2 <- olas_prov %>%
     y = "Número de olas de calor",
     title = "Olas de calor por provincia (2020)"
   ) +
-  theme_classic()
+  theme_minimal()
 
 
 G2

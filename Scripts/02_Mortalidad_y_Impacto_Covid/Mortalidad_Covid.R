@@ -5,9 +5,9 @@ G3 <- datos_tasas %>%
   mutate(ccaa = reorder(ccaa, var_defuncion_100k)) %>% 
   ggplot(mapping = aes(x = ccaa, y = var_defuncion_100k)) +
   geom_segment(mapping = aes(xend = ccaa, yend = 0),
-               colour = "grey") +                
-  geom_point(size = 4, colour = "lightblue") +     
-  geom_text(mapping = aes(label = var_defuncion_100k),
+               colour = "red") +                
+  geom_point(size = 4, colour = "orange") +     
+  geom_text(mapping = aes(label = round(var_defuncion_100k,2)),
             hjust = -0.5, size = 3) +               
   coord_flip() +                                    
   scale_y_continuous(expand = expansion(mult = c(0, .15))) +
@@ -30,10 +30,10 @@ muertes_causa <- bind_rows(
 G4 <- muertes_causa %>%
   ggplot(mapping = aes(x = reorder(ccaa, defunciones, sum),
                        y = defunciones, fill = causa)) +
-  geom_col() +                                          
+  geom_col(position = "fill") +                                          
   coord_flip() +                                        
-  scale_fill_manual(values = c("COVID-19" = "green",
-                               "No COVID-19" = "blue")) + 
+  scale_fill_manual(values = c("COVID-19" = "red",
+                               "No COVID-19" = "orange")) + 
   labs(x = "CCAA",
        y = "Aumento de defunciones por cada 100.000hab (2020 respecto a 2019)",
        fill = "",
@@ -55,11 +55,11 @@ G5 <- ggplot(data = datos_g5,
              mapping = aes(x = "", y = defunciones, fill = causa)) +
   geom_bar(stat = "identity", width = 1) +      
   coord_polar("y") +                           
-  scale_fill_manual(values = c("COVID" = "purple",
-                               "No_COVID" = "yellow")) +
+  scale_fill_manual(values = c("COVID" = "red",
+                               "No_COVID" = "orange")) +
   labs(fill = "Causa",
        title = "Distribución del aumento de defunciones según causa (2020)") +
-  theme_void()                                 
+  theme_minimal()                                 
 
 G5
 
@@ -82,7 +82,7 @@ G6 <- datos_tasas %>%
                              xend = x_fin, yend = y_fin),
                inherit.aes = FALSE,
                linetype = "dashed",
-               colour = "blue") +                
+               colour = "red") +                
   geom_point(size = 3, colour = "orange") +    
   geom_text(mapping = aes(label = ccaa),
             vjust = -0.8, size = 3,
