@@ -289,14 +289,15 @@ olas_ccaa_ola <- olas %>%
 G1 <- ggplot(data = olas_ccaa_ola,
              mapping = aes(x = reorder(ccaa, duracion_dias, sum),
                            y = duracion_dias, fill = ola)) +
-  geom_bar(stat = "identity") +
-  coord_flip() +
+  geom_col(position = position_dodge(preserve = "single")) +
   scale_fill_brewer(palette = "YlOrRd") +
-  scale_y_continuous(expand = expansion(mult = c(0, .1))) +
-  labs(x = "CCAA", 
-       y = "Duración días ola de calor", 
-       title = "Días asociados a cada ola de calor por Comunidad Autónoma (2020)") +
-  theme_classic()
+  scale_y_continuous(expand = expansion(mult = c(0, 0.1))) +
+  labs(x = "Comunidad autónoma",
+       y = "Duración de la ola de calor (días)",
+    fill = "Ola",
+    title = paste( "Días asociados a cada ola de calor por comunidad autónoma (2020)")) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 G1
 ```
@@ -318,17 +319,19 @@ En este otro gráfico también utilizamos un diagrama de barras horizontales en 
 ```{r g2-olas-provincia, fig.width=7, fig.height=7}
 G2 <- olas_prov %>%
   filter(n_olas > 0) %>%
-  ggplot(mapping = aes(x = reorder(provincia, n_olas), y = n_olas)) +
-  geom_bar(stat = "identity", fill = "orange") +
+  ggplot(mapping = aes( 
+    x = reorder(provincia, n_olas),
+    y = n_olas)) +
+  geom_col(fill = "orange") +
   coord_flip() +
   scale_y_continuous(breaks = 0:3) +
-  labs(x = "Provincia",
-       y = "Número de olas de calor",
-       title = "Olas de calor por provincia (2020)") +
-  theme_classic()
+  labs(
+    x = "Provincia",
+    y = "Número de olas de calor",
+    title = "Olas de calor por provincia (2020)") +
+  theme_minimal()
 
 G2
-
 
 ```
 
@@ -341,31 +344,6 @@ Según el número de olas de calor de 2020 (hubo tres) en las que figura cada pr
 El resto de provincias no aparecen en el gráfico porque no figuran en ninguna de las tres olas. Este gráfico cuenta en cuántas olas está cada provincia, pero no mide la intensidad del calor, una provincia incluida en una ola a lo mejor no tuvo ola de calor todos los días del intervalo.
 
 ***Pregunta 2: ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?***
-
-
-```{r g3-aumeto-defunciones-ccaa, fig.width=7, fig.height=7}
-
-#codigo extraido de Mortalidad_Covid.R
-
-G3 <- datos_unidos %>%
-  mutate(ccaa = reorder(ccaa, var_defunciones)) %>% 
-  ggplot(mapping = aes(x = ccaa, y = var_defunciones)) +
-  geom_segment(mapping = aes(xend = ccaa, yend = 0),
-               colour = "grey") +                
-  geom_point(size = 4, colour = "lightblue") +     
-  geom_text(mapping = aes(label = round(var_defunciones)),
-            hjust = -0.5, size = 3) +               
-  coord_flip() +                                    
-  scale_y_continuous(expand = expansion(mult = c(0, .15))) +
-  labs(x = "CCAA",
-       y = "Aumento de defunciones por 100.000 hab (2020 respecto a 2019)",
-       title = "Aumento de defunciones por Comunidad Autónoma, ajustado por población (2020)") +
-  theme_minimal()                                  
-
-G3  
-
-
-```
 
 
 A la hora de responder esta pregunta y las que tienen relación con las defunciones y las comunidades autónomas, utilizaremos las siguientes variables teniendo en cuenta la población de cada ccaa (tasas por 100.000 habitantes).
@@ -389,25 +367,22 @@ Utilizamos un gráfico de puntos ordenado, en el eje x representamos el aumento 
 
 ```{r g3-aumeto-defunciones-ccaa, fig.width=7, fig.height=7}
 
-#codigo extraido de Mortalidad_Covid.R
-
 G3 <- datos_tasas %>%
   mutate(ccaa = reorder(ccaa, var_defuncion_100k)) %>% 
   ggplot(mapping = aes(x = ccaa, y = var_defuncion_100k)) +
   geom_segment(mapping = aes(xend = ccaa, yend = 0),
-               colour = "grey") +                
-  geom_point(size = 4, colour = "lightblue") +     
-  geom_text(mapping = aes(label = round(var_defuncion_100k)),
+               colour = "red") +                
+  geom_point(size = 4, colour = "orange") +     
+  geom_text(mapping = aes(label = round(var_defuncion_100k,2)),
             hjust = -0.5, size = 3) +               
   coord_flip() +                                    
   scale_y_continuous(expand = expansion(mult = c(0, .15))) +
   labs(x = "CCAA",
-       y = "Aumento de defunciones por 100.000 hab (2020 respecto a 2019)",
-       title = "Aumento de defunciones por Comunidad Autónoma, ajustado por población (2020)") +
+       y = "Aumento de defunciones (2020 respecto a 2019)",
+       title = "Aumento de defunciones por Comunidad Autónoma (2020)") +
   theme_minimal()                                  
 
 G3  
-
 
 ```
 Al ajustar por población, el aumento de muertes en 2020 respecto a 2019 varía mucho entre comunidades: 47 defunciones más por cada 100.000 habitantes en Canarias hasta 345 en Castilla y León. 
@@ -418,13 +393,20 @@ Este gráfico recoge el aumento total de defunciones, que incluye las muertes po
 
 
 ```{r g4-aumento-defunciones-covid-y-resto, fig.width=7, fig.height=7}
+muertes_causa <- bind_rows(
+  datos_tasas %>% transmute(ccaa, causa = "COVID-19",
+                             defunciones = covid_100k),
+  datos_tasas %>% transmute(ccaa, causa = "No COVID-19",
+                             defunciones = resto_100k)
+)
+
 G4 <- muertes_causa %>%
   ggplot(mapping = aes(x = reorder(ccaa, defunciones, sum),
                        y = defunciones, fill = causa)) +
-  geom_col() +                                          
+  geom_col(position = "fill") +                                          
   coord_flip() +                                        
-  scale_fill_manual(values = c("COVID-19" = "green",
-                               "No COVID-19" = "blue")) + 
+  scale_fill_manual(values = c("COVID-19" = "red",
+                               "No COVID-19" = "orange")) + 
   labs(x = "CCAA",
        y = "Aumento de defunciones por cada 100.000hab (2020 respecto a 2019)",
        fill = "",
@@ -456,7 +438,7 @@ G6 <- datos_tasas %>%
                              xend = x_fin, yend = y_fin),
                inherit.aes = FALSE,
                linetype = "dashed",
-               colour = "blue") +                
+               colour = "red") +                
   geom_point(size = 3, colour = "orange") +    
   geom_text(mapping = aes(label = ccaa),
             vjust = -0.8, size = 3,
@@ -467,10 +449,38 @@ G6 <- datos_tasas %>%
        caption = "Línea discontinua: el COVID-19 explica todo el aumento") +
   theme_minimal()                                  
 
-G6 
+G6
 
 ```
 
-ANALIZAR RESULTADO
+La línea roja discontinua representa cómo sería si el COVID - 19 explicara el 100% de aumento de las muertes. 
+Como podemos observar todas las comunidades autónomas estan por debajo de esta línea, salvo País Vasco que está justo encima de dicha línea.
+Esto quiere muetra que el incremento total de defunciones en 2020 fue superior a las muertes que se atribuyeron al coronavirus. Es decir, en la mayoría de las comunidades hay exceso de mortalidad no relacionado con el COVID - 19, asociada a factores externos como podrían ser las muertes por exceso de calor. 
 
-***Pregunta 3: ¿Están relacionadas las olas de calor y el aumento de muertes con el COVID-19?***
+***Pregunta 3: ¿Qué parte de ese aumento corresponden a muertes por COVID-19?***
+
+```{r g5-aumento-defunciones-causa, fig.width=7, fig.height=7}
+datos_g5 <- datos_tasas %>%
+  summarise(
+    COVID = sum(covid_100k),                 
+    No_COVID = sum(resto_100k)   
+  ) %>%
+  pivot_longer(cols = everything(),             
+               names_to = "causa",               
+               values_to = "defunciones")       
+G5 <- ggplot(data = datos_g5,
+             mapping = aes(x = "", y = defunciones, fill = causa)) +
+  geom_bar(stat = "identity", width = 1) +      
+  coord_polar("y") +                           
+  scale_fill_manual(values = c("COVID" = "red",
+                               "No_COVID" = "orange")) +
+  labs(fill = "Causa",
+       title = "Distribución del aumento de defunciones según causa (2020)") +
+  theme_minimal() 
+
+G5
+```
+En el gráfico observamos dos categorías, el sector rojo representa las muertes que se atribuyeron al coronavirus, que es la principal causas de fallecimiento de este año. El sector naranja representa las defunciones por el resto de causas.
+
+
+***Pregunta 4: ¿Están relacionadas las olas de calor y el aumento de muertes con el COVID-19?***
