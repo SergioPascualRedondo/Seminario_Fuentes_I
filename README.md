@@ -32,7 +32,7 @@ Analizar si el aumento de muertes en 2020 respecto a 2019 en las comunidades aut
 1. ¿Cuántas olas de calor y cuántos días de ola se registraron en 2020 en cada provincia y CCAA?
 2. ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?
 3. ¿Qué parte de ese aumento corresponden a muertes por COVID-19?
-4. ¿Están relacionadas las olas de calor y el aumento de muertes con el COVID-19?
+4. ¿Tiene relación ese aumento de muertes con las olas de calor?
 ## Metodología
 
 Se realiza un estudio descriptivo y exploratorio de 2020 utilizando información
