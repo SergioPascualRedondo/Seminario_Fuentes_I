@@ -128,7 +128,7 @@ covid
 Los datos proceden de la Estimación del número de defunciones semanales del Instituto Nacional de Estadística. El archivo contiene las defunciones registradas durante cada semana de 2020 para todas las comunidades autónomas.
 
 ```{r importar-defunciones-semanales}
-muertes_semana_json <- leer_json("INPUT/DATA/muertes_semana.json")
+muertes_semana_json <- leer_json("INPUT/DATA/defunciones_semana_2020_2019.json")
 
 muertes_semana_json %>%
   gather_array() %>%
@@ -145,11 +145,13 @@ muertes_sem <- muertes_semana_json%>%
   gather_array(column.name = "indice_semana")%>%
   spread_values(fecha=jstring("Fecha"),
                 periodo = jstring("T3_Periodo"),
+                anyo=jnumber("Anyo"),
                 muertes_totales=jnumber("Valor"))%>%
   
   as_tibble()%>%
   
   transmute(ccaa_raw = str_remove(nombre, "\\. Total\\..*$"), 
+            anyo = as.integer(anyo),
             semana = as.integer(str_extract(periodo, "\\d+$")),
             fecha = as.Date(substr(fecha, 1, 10)),
             muertes_totales)
@@ -177,11 +179,6 @@ muertes_sem <- muertes_sem %>%
 muertes_sem
 
 ```
-
-
-### Defunciones semanales por comunidad autónoma en 2019
-
-Importamos los datos de defunciones semanas en 2019 por ccaa para hacer la variación con respecto a los semanales en 2020 y poder comprobar si existe relación entre el aumento con las 3 olas de calor que hubo en 2020 (quitando las muertes por covid).
 
 
 
