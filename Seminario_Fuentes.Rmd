@@ -174,17 +174,32 @@ renombrar_ccaa <- function(x) {
 muertes_sem <- muertes_sem %>%
   filter(!ccaa_raw %in% c("Total Nacional", "No residente")) %>%
   mutate(ccaa = renombrar_ccaa(ccaa_raw)) %>%
-  select(ccaa, semana, fecha, muertes_totales)
+  select(ccaa, semana, fecha, muertes_totales, anyo)
 
 muertes_sem
 
 ```
 
 
+Calculamos la variación de muerte semanal en 2020 frente 2019
+
+```{r variacion-semanal}
+tabla_semanal <- muertes_sem %>%
+  pivot_wider(id_cols = c(ccaa, semana),
+              names_from = anyo,
+              values_from = c(fecha, muertes_totales)) %>%    
+  
+  filter(!is.na(fecha_2019)) %>%                      
+  transmute(ccaa, semana,
+            fecha_2019, fecha_2020,
+            muertes_2019 = muertes_totales_2019,
+            muertes_2020 = muertes_totales_2020,
+            variacion = muertes_2020 - muertes_2019)
+
+tabla_semanal
 
 
-
-
+```
 
 
 ### Poblaciones España 1997-2021
