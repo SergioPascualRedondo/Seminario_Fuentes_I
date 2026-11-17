@@ -126,10 +126,53 @@ covid
 Los datos proceden de la Estimación del número de defunciones semanales del Instituto Nacional de Estadística. El archivo contiene las defunciones registradas durante cada semana de 2020 para todas las comunidades autónomas.
 
 ```{r importar-defunciones-semanales}
-muertes_semana_json <- jsonlite::fromJSON(
-  "INPUT/DATA/muertes_semana.json",
-  simplifyVector = FALSE
-)
+muertes_semana_json <- leer_json("INPUT/DATA/muertes_semana.json")
+
+muertes_semana_json %>%
+  gather_array() %>%
+  gather_object() %>%
+  json_types() %>%
+  count(name, type) #Data y metaData son array 
+
+
+muertes_sem <- muertes_semana_json%>%
+  gather_array(column.name = "indice_serie")%>%
+  spread_values(nombre = jstring("Nombre"))%>%
+  
+  enter_object("Data")%>%
+  gather_array(column.name = "indice_semana")%>%
+  spread_values(fecha=jstring("Fecha"),
+                periodo = jstring("T3_Periodo"),
+                muertes_totales=jnumber("Valor"))%>%
+  
+  as_tibble()%>%
+  
+  transmute(ccaa_raw = str_remove(nombre, "\\. Total\\..*$"), 
+            semana = as.integer(str_extract(periodo, "\\d+$")),
+            fecha = as.Date(substr(fecha, 1, 10)),
+            muertes_totales)
+
+
+renombrar_ccaa <- function(x) {
+  x <- str_remove(x, "^\\d+\\s+")
+  case_match(x,
+    "Asturias, Principado de"     ~ "Asturias",
+    "Balears, Illes"              ~ "Islas Baleares",
+    "Castilla - La Mancha"        ~ "Castilla-La Mancha",
+    "Comunitat Valenciana"        ~ "Comunidad Valenciana",
+    "Madrid, Comunidad de"        ~ "Madrid",
+    "Murcia, Región de"           ~ "Murcia",
+    "Navarra, Comunidad Foral de" ~ "Navarra",
+    "Rioja, La"                   ~ "La Rioja",
+    .default = x)
+}
+
+muertes_sem <- muertes_sem %>%
+  filter(!ccaa_raw %in% c("Total Nacional", "No residente")) %>%
+  mutate(ccaa = renombrar_ccaa(ccaa_raw)) %>%
+  select(ccaa, semana, fecha, muertes_totales)
+
+muertes_sem
 
 ```
 ### Poblaciones España 1997-2021
