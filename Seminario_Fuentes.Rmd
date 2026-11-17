@@ -218,6 +218,21 @@ poblacion<- poblacion_px %>%
 poblacion
 ```
 
+### Defunciones por COVID semanal (csv tabulado)
+```{r defunciones-semanal-covid}
+covid_semanal <- read_delim("INPUT/DATA/muertesCovidSemana.csv", 
+                            delim="\t",
+                            escape_double = FALSE, 
+                            trim_ws = TRUE, 
+                            locale = locale(encoding = "latin1"))%>%
+  
+  transmute(ccaa= renombrar_ccaa(`Comunidad y ciudad autónoma de defunción`),
+            semana = as.integer(str_extract(`Semana de defunción`, "\\d+$")),
+            muertes_covid = replace_na(Total, ".."))
+
+covid_semanal
+
+```
 ## Preparación de los datos
 
 ### Preparación de la población de 2020
