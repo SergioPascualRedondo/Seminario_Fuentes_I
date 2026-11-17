@@ -130,6 +130,7 @@ muertes_semana_json <- jsonlite::fromJSON(
   "INPUT/DATA/muertes_semana.json",
   simplifyVector = FALSE
 )
+
 ```
 ### Poblaciones España 1997-2021
 
