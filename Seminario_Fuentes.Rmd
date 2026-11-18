@@ -819,7 +819,7 @@ Por otro lado, la tendencia de las comunidades sin ola (línea azul) muestran va
 
 Repetimos el mismo análisis pero esta vez separado por comunidades, ordenadas de más a menos días de olas de calor. Cada franja naranja corresponde a las olas que afectaron específicamente a esa comunidad. Como cada panel tiene su propia escala vertial no debemos comparar el tanaño de los picos entre gráficas, sio fijarnos en si el momento en el que sube la mortalidad coincide temporalmente con las franjas naranjas de las olas. 
 
-```{r G10-var-defunciones-ola, fig.width=10,fig.height=11}
+```{r G9-facetas-defunciones-ola, fig.width=10, fig.height=11}
 ventanas <- exceso_no_covid %>%
   filter(semana >= 22, semana <= 38) %>%
   left_join(olas_ccaa %>% select(ccaa, dias_ola_media), by = "ccaa") %>%
@@ -835,7 +835,7 @@ G9 <- ggplot(ventanas, aes(x = fecha_2020, y = variacion_no_covid_100k)) +
             aes(xmin = fecha_inicio, xmax = fecha_fin, ymin = -Inf, ymax = Inf),
             inherit.aes = FALSE, fill = "orange", alpha = 0.3) +
   geom_hline(yintercept = 0, colour = "grey60") +
-  geom_line() +
+  geom_line() 
   facet_wrap(vars(ccaa), ncol = 4, scales = "free_y") +
   scale_x_date(date_breaks = "1 month", date_labels = "%m") +
   labs(title = "Variación de defunciones no COVID-19 por comunidad en el verano de 2020",
