@@ -358,7 +358,7 @@ En nuestro seminario analizaremos si el aumento de muertes en 2020 respecto a 20
 
 ### Representaciones gráficas
 
-***Pregunta 1: ¿Cuántas olas de calor y cuántos días de ola se registraron en 2020 en cada provincia y CCAA?***
+##Pregunta 1: ¿Cuántas olas de calor y cuántos días de ola se registraron en 2020 en cada provincia y CCAA?
 
 **Gráfico 1: días de ola por CCAA**
 
@@ -436,12 +436,7 @@ El resto de provincias no aparecen en el gráfico porque no figuran en ninguna d
 
 ```{r mapa-españa}
 
-#Código extraido de Olas_calor.R
-
-# ============================================================
-# 
-# MAPA DE DÍAS DE OLA DE CALOR POR PROVINCIA
-# ============================================================
+#Código extraido de Olas_calor.
 
 # Obtenemos las geometrías de las provincias españolas.
 # Canarias se desplaza para obtener un mapa más compacto.
@@ -570,7 +565,7 @@ mapa_interactivo_olas
 
 ```
 
-***Pregunta 2: ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?***
+##Pregunta 2: ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?
 
 
 A la hora de responder esta pregunta y las que tienen relación con las defunciones y las comunidades autónomas, utilizaremos las siguientes variables teniendo en cuenta la población de cada ccaa (tasas por 100.000 habitantes).
@@ -687,7 +682,7 @@ La línea roja discontinua representa cómo sería si el COVID - 19 explicara el
 Como podemos observar todas las comunidades autónomas estan por debajo de esta línea, salvo País Vasco que está justo encima de dicha línea.
 Esto quiere muetra que el incremento total de defunciones en 2020 fue superior a las muertes que se atribuyeron al coronavirus. Es decir, en la mayoría de las comunidades hay exceso de mortalidad no relacionado con el COVID - 19, asociada a factores externos como podrían ser las muertes por exceso de calor. 
 
-***Pregunta 3: ¿Tiene relación ese aumento de muertes con las olas de calor?***
+##Pregunta 3: ¿Tiene relación ese aumento de muertes con las olas de calor?
 
 Para resolver esta pregunta, la clave de nuestro seminario, utilizamos los datos de defunciones por semanas.
 Al usar estos datos en lugar de los globales de defunciones podemos comprobar si justo en la fecha de las olas de calor, o semanas posteriores hubo más muertes (excluyendo las de COVID) o si por el contrario no, y nuestra hipótesis no se sostiene.
@@ -734,6 +729,7 @@ exceso_no_covid
 
 Ya tenemos los nuevos datos de defunciones por semanas listos para realizar los gráficos y comprobar si existe alguna relación entre el aumento de muertes en las fechas de ola de calor con las mismas.
 
+**Gráfico 7: Olas de calor y defunciones (sin COVID)**
 
 Como primera aproximación comparamos, para cada comunidad, la media de días de ola de calor por provincia con la variación de defunciones no COVID-19 por 100.000 habitantes en 2020 respecto a 2019. Cada punto es una comunidad autónoma y la recta azul es un ajuste lineal con su intervalo de confianza.
 
@@ -778,6 +774,12 @@ Por todos estos motivos, los datos anuales mezclan demasiados efectos y no nos p
 
 Para ello dividimos las comunidades en dos grupos: las que figuran en alguna ola de calor de 2020 y las que no (Asturias, Cantabria, Canarias, Extremadura, La Rioja, Ceuta y Melilla). Para cada grupo calculamos, semana a semana, la variación de defunciones respecto a la misma semana de 2019, restando las muertes por COVID-19, por cada 100.000 habitantes. Nos centramos en las semanas 22 a 38 (finales de mayo a septiembre), cuando la incidencia del COVID-19 era baja y es menos probable que el exceso "no COVID" sea en realidad COVID-19 sin identificar. La línea gris marca el 0 (misma mortalidad que en 2019) y las franjas naranjas, las fechas de las tres olas, que son las nacionales y solo afectan a las comunidades del grupo "con ola".
 
+**Gráfico 10:variación de defunciones por CCAA con olas y sin olas de calor**
+
+Dividimos las comunidades en dos grupos: las que figuran en alguna ola de calor de 2020 y las que no (Asturias, Cantabria, Canarias, Extremadura, La Rioja, Ceuta y Melilla). Para cada grupo calculamos, semana a semana, la variación de defunciones respecto a la misma semana de 2019, restando las muertes por COVID-19, por cada 100.000 habitantes. Nos centramos en las semanas 22 a 38 (finales de mayo a septiembre), cuando la incidencia del COVID-19 era baja y es menos probable que el exceso "no COVID" sea en realidad COVID-19 sin identificar. La línea gris marca el 0 (misma mortalidad que en 2019) y las franjas naranjas indican las fechas de las tres olas de calor nacionales, las cuales solo afectan a las comunidades del grupo "con ola".
+
+
+
 ```{r G10-var-defunciones-ola, fig.width=9, fig.height=5}
 exposicion <- exceso_no_covid %>%
   group_by(ccaa) %>%
@@ -808,12 +810,50 @@ G10<- ggplot(lineas, aes(x = fecha_2020, y = tasa, colour = grupo)) +
 
 G10
 ```
-Dividimos las comunidades en dos grupos: las que figuran en alguna ola de calor de 2020 y las que no (Asturias, Cantabria, Canarias, Extremadura, La Rioja, Ceuta y Melilla). Para cada grupo calculamos, semana a semana, la variación de defunciones respecto a la misma semana de 2019, restando las muertes por COVID-19, por cada 100.000 habitantes. Nos centramos en las semanas 22 a 38 (finales de mayo a septiembre), cuando la incidencia del COVID-19 era baja y es menos probable que el exceso "no COVID" sea en realidad COVID-19 sin identificar. La línea gris marca el 0 (misma mortalidad que en 2019) y las franjas naranjas indican las fechas de las tres olas de calor nacionales, las cuales solo afectan a las comunidades del grupo "con ola".
-
-
 Ambos grupos parten de valores negativos en junio (es decir, registraron menos muertes "no COVID" que en 2019). Si nos fijamos en las comunidades con ola (línea roja), la subida más destacada es el pico de la semana del 30 de julio, coincidiendo con la segunda ola de calor (del 25 de julio al 2 de agosto). En ese punto la variación alcanza un máximo de 2,85 defunciones extra por cada 100.000 habitantes. Sin embargo, la primera ola (18-20 de julio) apenas muestra un cambio apreciable, y para cuando llega la tercera (5-10 de agosto), la curva de mortalidad de este grupo ya se encontraba en descenso.
 
 Por otro lado, la tendencia de las comunidades sin ola (línea azul) muestran varios picos. Tras una caída a principios de julio, sus valores se disparan y se mantienen por encima de las comunidades con ola durante casi todo agosto y septiembre. Esto demuestra que el aumento de mortalidad de ese verano no fue exclusivo de las regiones donde AEMET registró olas de calor. Aunque el pico de la línea roja es perfectamente compatible con el impacto de las temperaturas extremas de la segunda ola, la gráfica azul nos indica que no podemos atribuirle todo el exceso de muertes únicamente al calor. Hay que tener en cuenta, además, que el grupo "sin ola" tiene una población mucho menor (unos 5 millones), por lo que es normal que sus datos semanales tengan más ruido estadístico y presenten mayores altibajos.
 
 
+**Gráfico 9: variaciones de defunción en los meses de verano**
 
+Repetimos el mismo análisis pero esta vez separado por comunidades, ordenadas de más a menos días de olas de calor. Cada franja naranja corresponde a las olas que afectaron específicamente a esa comunidad. Como cada panel tiene su propia escala vertial no debemos comparar el tanaño de los picos entre gráficas, sio fijarnos en si el momento en el que sube la mortalidad coincide temporalmente con las franjas naranjas de las olas. 
+
+```{r G10-var-defunciones-ola, fig.width=10,fig.height=11}
+ventanas <- exceso_no_covid %>%
+  filter(semana >= 22, semana <= 38) %>%
+  left_join(olas_ccaa %>% select(ccaa, dias_ola_media), by = "ccaa") %>%
+  mutate(ccaa = fct_reorder(ccaa, -dias_ola_media))      #de más a menos calor
+
+olas_ventanas <- olas %>%
+  left_join(prov_ccaa, by = "provincia") %>%
+  distinct(ccaa, id_ola, fecha_inicio, fecha_fin) %>%
+  mutate(ccaa = factor(ccaa, levels = levels(ventanas$ccaa))) #los niveles van a a ser las ccaa de cada ventana
+
+G9 <- ggplot(ventanas, aes(x = fecha_2020, y = variacion_no_covid_100k)) +
+  geom_rect(data = olas_ventanas,
+            aes(xmin = fecha_inicio, xmax = fecha_fin, ymin = -Inf, ymax = Inf),
+            inherit.aes = FALSE, fill = "orange", alpha = 0.3) +
+  geom_hline(yintercept = 0, colour = "grey60") +
+  geom_line() +
+  facet_wrap(vars(ccaa), ncol = 4, scales = "free_y") +
+  scale_x_date(date_breaks = "1 month", date_labels = "%m") +
+  labs(title = "Variación de defunciones no COVID-19 por comunidad en el verano de 2020",
+       subtitle = "Franjas naranjas: olas de calor de cada comunidad; comunidades ordenadas de más a menos calor",
+       x = "Mes", y = "Variación por 100.000 hab. (frente a 2019)") +
+  theme_minimal()
+G9
+```
+En las cuatro comunidades con más días de ola (Castilla-La Mancha, Cataluña, Madrid y Castilla y León), vemos un patrón claro: la variación pasa de valores cercanos a 0 o negativos en junio a un pico máximo (de entre 2 y 6 defunciones extra por 100.000 habitantes) que coincide de  con las franjas de la segunda y tercera ola. En Andalucía, Galicia, la Comunidad Valenciana y el País Vasco también se aprecia un repunte claro coincidiendo con las franjas de calor.
+
+Sin embargo, la gráfica también nos muestra claras excepciones que rompen esta regla. En Murcia y Navarra, el pico máximo de muertes llega bastante después de que termine la ola. En Aragón, el aumento de mortalidad empieza mucho antes de su única franja de calor y se mantiene alto durante todo el verano. Además, si miramos la mitad inferior del panel, las comunidades sin ola (Asturias, Canarias, Cantabria, Extremadura, La Rioja, Ceuta y Melilla) también sufren picos de mortalidad fortísimos. Por ejemplo, Extremadura se dispara por encima de 5 desde mediados de julio a pesar de no registrar olas.
+
+Hay que tener en cuenta que en las regiones con menos población (como Ceuta, Melilla, La Rioja o Cantabria), las series son mucho más irregulares y "puntiagudas", ya que muy pocas defunciones reales alteran muchísimo la tasa por 100.000 habitantes.
+
+
+***Conclusión***
+Los tres gráficos apuntan a lo mismo, pero la verdad es que la evidencia es justa. Si miramos el año entero (Gráfico 7), se nota cierta relación entre los días de calor y el aumento de muertes 'no COVID', pero es bastante floja. Al analizarlo semana a semana (Gráficos 8 y 9), sí que vemos que en comunidades del interior (Castilla-La Mancha, Madrid, Castilla y León y Cataluña) el pico de defunciones cuadra de lleno con las olas de calor de finales de julio y principios de agosto.
+
+El problema es que ese mismo repunte de muertes también nos sale en comunidades donde no hubo ninguna ola de calor. Además, aquí entra en juego el factor de la pandemia: es muy posible que parte de ese exceso de muertes 'no COVID' sean en realidad casos de COVID-19 que no se diagnosticaron.
+
+En resumen, no podemos afirmar rotundamente que las olas de calor expliquen todo este exceso de mortalidad. Es una posibilidad real, pero al mezclarse con los efectos de la pandemia y darse aumentos también en zonas sin calor, con los datos que tenemos ni lo podemos confirmar al 100% ni lo podemos descartar.
