@@ -194,7 +194,7 @@ tabla_semanal <- muertes_sem %>%
             fecha_2019, fecha_2020,
             muertes_2019 = muertes_totales_2019,
             muertes_2020 = muertes_totales_2020,
-            variacion = muertes_2020 - muertes_2019)
+            variacion_def_semanal = muertes_2020 - muertes_2019)
 
 tabla_semanal
 
@@ -228,7 +228,9 @@ covid_semanal <- read_delim("INPUT/DATA/muertesCovidSemana.csv",
   
   transmute(ccaa= renombrar_ccaa(`Comunidad y ciudad autónoma de defunción`),
             semana = as.integer(str_extract(`Semana de defunción`, "\\d+$")),
-            muertes_covid = replace_na(Total, ".."))
+            muertes_covid = as.integer(replace_na(
+              parse_number(as.character(Total),
+                                         na = c("", "NA", "..")),0)))
 
 covid_semanal
 
@@ -689,6 +691,49 @@ Esto quiere muetra que el incremento total de defunciones en 2020 fue superior a
 
 Para resolver esta pregunta, la clave de nuestro seminario, utilizamos los datos de defunciones por semanas.
 Al usar estos datos en lugar de los globales de defunciones podemos comprobar si justo en la fecha de las olas de calor, o semanas posteriores hubo más muertes (excluyendo las de COVID) o si por el contrario no, y nuestra hipótesis no se sostiene.
+
+
+Primero tenemos que hacer algunas operaciones con los datos.
+Para verlo de una manera más precisa, calculamos cuantos días de ola hubo en cada ccaa en cada semana
+
+```{r dias-ola-semana}
+
+olas_ccaa_fechas <- olas %>%
+  left_join(prov_ccaa, by = "provincia") %>%
+  distinct(ccaa, id_ola, fecha_inicio, fecha_fin) #eliminamos las filas repetidas
+
+semanas <- tabla_semanal %>%
+  distinct(semana, fecha_2020) %>%
+  mutate(sem_inicio = fecha_2020 - 3, sem_fin = fecha_2020 + 3) #en los datos, la fecha de la semana viene indicada por jueves. Restamos 3 días para conseguir el lunes y sumamos 3 para llegar hasta el domingo
+
+dias_ola_semana <- crossing(olas_ccaa_fechas, semanas) %>% #combinamos cada ola de calor registrada en cada comunidad con cada una de las semanas del año.
+  mutate(dias = 
+           pmax(0, as.numeric(pmin(fecha_fin, sem_fin) - 
+                                pmax(fecha_inicio, sem_inicio)) + 1)) %>%
+  group_by(ccaa, semana) %>%
+  summarise(dias_ola = sum(dias), .groups = "drop")
+
+dias_ola_semana
+```
+
+
+```{r def semana - def semana covid}
+
+exceso_no_covid <- tabla_semanal %>%
+  left_join(covid_semanal, by = c("ccaa", "semana")) %>%
+  left_join(dias_ola_semana, by = c("ccaa", "semana")) %>%
+  left_join(poblacion_2020, by = "ccaa") %>%
+  mutate(dias_ola = replace_na(dias_ola, 0),     # comunidades sin ninguna ola
+         
+         variacion_no_covid = variacion_def_semanal - muertes_covid,
+         variacion_no_covid_100k = round(variacion_no_covid / poblacion * 1e5))
+
+exceso_no_covid 
+```
+
+
+Ya tenemos los nuevos datos de defunciones por semanas listos para realizar los gráficos y comprobar si existe alguna relación entre el aumento de muertes en las fechas de ola de calor con las mismas.
+
 
 
 
