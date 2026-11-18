@@ -776,8 +776,44 @@ Otra posible explicación es que las comunidades con más días de ola son tambi
 Por todos estos motivos, los datos anuales mezclan demasiados efectos y no nos permiten llegar a una conclusión válida. Para aislar el efecto real de las temperaturas analizamos únicamente los datos semanales centrados en los meses de verano.
 
 
+Para ello dividimos las comunidades en dos grupos: las que figuran en alguna ola de calor de 2020 y las que no (Asturias, Cantabria, Canarias, Extremadura, La Rioja, Ceuta y Melilla). Para cada grupo calculamos, semana a semana, la variación de defunciones respecto a la misma semana de 2019, restando las muertes por COVID-19, por cada 100.000 habitantes. Nos centramos en las semanas 22 a 38 (finales de mayo a septiembre), cuando la incidencia del COVID-19 era baja y es menos probable que el exceso "no COVID" sea en realidad COVID-19 sin identificar. La línea gris marca el 0 (misma mortalidad que en 2019) y las franjas naranjas, las fechas de las tres olas, que son las nacionales y solo afectan a las comunidades del grupo "con ola".
+
+```{r G10-var-defunciones-ola, fig.width=9, fig.height=5}
+exposicion <- exceso_no_covid %>%
+  group_by(ccaa) %>%
+  summarise(dias_ola_total = sum(dias_ola), .groups = "drop") %>%
+  mutate(grupo = ifelse(dias_ola_total > 0, "Comunidades con ola", "Comunidades sin ola"))
 
 
+lineas <- exceso_no_covid %>%
+  left_join(exposicion, by = "ccaa") %>%
+  group_by(grupo, semana, fecha_2020) %>%
+  summarise(tasa = sum(variacion_no_covid) / sum(poblacion) * 1e5, .groups = "drop") %>%
+  filter(semana >= 22, semana <= 38) #filtramos por las semanas en las que hay alguna ola de calor
+lineas 
+
+olas_fechas <- olas %>% 
+  distinct(id_ola, fecha_inicio, fecha_fin)
+olas_fechas 
+
+G10<- ggplot(lineas, aes(x = fecha_2020, y = tasa, colour = grupo)) +
+  geom_rect(data = olas_fechas,
+            aes(xmin = fecha_inicio, xmax = fecha_fin, ymin = -Inf, ymax = Inf),
+            inherit.aes = FALSE,  #utilizamos FALSE ya que vamos a crear una capa independiente encima
+            fill = "orange", alpha = 0.3) +
+  geom_hline(yintercept = 0, colour = "grey60") +
+  geom_line(linewidth = 1) +
+  labs(x = "", y = "Variación no COVID por 100.000 hab. (frente a 2019)", colour = "") +
+  theme_minimal() 
+
+G10
+```
+Dividimos las comunidades en dos grupos: las que figuran en alguna ola de calor de 2020 y las que no (Asturias, Cantabria, Canarias, Extremadura, La Rioja, Ceuta y Melilla). Para cada grupo calculamos, semana a semana, la variación de defunciones respecto a la misma semana de 2019, restando las muertes por COVID-19, por cada 100.000 habitantes. Nos centramos en las semanas 22 a 38 (finales de mayo a septiembre), cuando la incidencia del COVID-19 era baja y es menos probable que el exceso "no COVID" sea en realidad COVID-19 sin identificar. La línea gris marca el 0 (misma mortalidad que en 2019) y las franjas naranjas indican las fechas de las tres olas de calor nacionales, las cuales solo afectan a las comunidades del grupo "con ola".
+
+
+Ambos grupos parten de valores negativos en junio (es decir, registraron menos muertes "no COVID" que en 2019). Si nos fijamos en las comunidades con ola (línea roja), la subida más destacada es el pico de la semana del 30 de julio, coincidiendo con la segunda ola de calor (del 25 de julio al 2 de agosto). En ese punto la variación alcanza un máximo de 2,85 defunciones extra por cada 100.000 habitantes. Sin embargo, la primera ola (18-20 de julio) apenas muestra un cambio apreciable, y para cuando llega la tercera (5-10 de agosto), la curva de mortalidad de este grupo ya se encontraba en descenso.
+
+Por otro lado, la tendencia de las comunidades sin ola (línea azul) muestran varios picos. Tras una caída a principios de julio, sus valores se disparan y se mantienen por encima de las comunidades con ola durante casi todo agosto y septiembre. Esto demuestra que el aumento de mortalidad de ese verano no fue exclusivo de las regiones donde AEMET registró olas de calor. Aunque el pico de la línea roja es perfectamente compatible con el impacto de las temperaturas extremas de la segunda ola, la gráfica azul nos indica que no podemos atribuirle todo el exceso de muertes únicamente al calor. Hay que tener en cuenta, además, que el grupo "sin ola" tiene una población mucho menor (unos 5 millones), por lo que es normal que sus datos semanales tengan más ruido estadístico y presenten mayores altibajos.
 
 
 
