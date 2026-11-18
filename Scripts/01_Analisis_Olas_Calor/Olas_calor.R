@@ -197,7 +197,7 @@ G8 <- ggplot(
       "asociados a olas de calor"
     )
   ) +
-  theme_void() +
+  theme_minimal() +
   theme(
     legend.position = "right",
     

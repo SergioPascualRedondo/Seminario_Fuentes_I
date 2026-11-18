@@ -51,7 +51,7 @@ olas_fechas <- olas %>%
   distinct(id_ola, fecha_inicio, fecha_fin)
 olas_fechas 
 
-G8<- ggplot(lineas, aes(x = fecha_2020, y = tasa, colour = grupo)) +
+G10<- ggplot(lineas, aes(x = fecha_2020, y = tasa, colour = grupo)) +
   geom_rect(data = olas_fechas,
             aes(xmin = fecha_inicio, xmax = fecha_fin, ymin = -Inf, ymax = Inf),
             inherit.aes = FALSE,  #utilizamos FALSE ya que vamos a crear una capa independiente encima
@@ -61,7 +61,7 @@ G8<- ggplot(lineas, aes(x = fecha_2020, y = tasa, colour = grupo)) +
   labs(x = "", y = "Variación no COVID por 100.000 hab. (frente a 2019)", colour = "") +
   theme_minimal() 
 
-G8
+G10
 #el 0 en el gráfico significa que las muertes en 2020 y 2019 se mantuvieron igual. Por encima del 0
 #hubo más muertes en 2020 que 2019 y por debajo al contrario
 
@@ -97,8 +97,8 @@ G9
 
 
 
-ggsave("SALIDA/FIGURAS/G8_var_defunciones_ola.png",
-       plot = G8, width = 9, height = 6, dpi = 300)
+ggsave("SALIDA/FIGURAS/G10_var_defunciones_ola.png",
+       plot = G10, width = 9, height = 6, dpi = 300)
 
 ggsave("SALIDA/FIGURAS/G9_facetas.png",
        plot = G9, width = 9, height = 6, dpi = 300)
