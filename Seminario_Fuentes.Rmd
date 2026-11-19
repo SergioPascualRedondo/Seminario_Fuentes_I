@@ -835,7 +835,7 @@ G9 <- ggplot(ventanas, aes(x = fecha_2020, y = variacion_no_covid_100k)) +
             aes(xmin = fecha_inicio, xmax = fecha_fin, ymin = -Inf, ymax = Inf),
             inherit.aes = FALSE, fill = "orange", alpha = 0.3) +
   geom_hline(yintercept = 0, colour = "grey60") +
-  geom_line() 
+  geom_line() +
   facet_wrap(vars(ccaa), ncol = 4, scales = "free_y") +
   scale_x_date(date_breaks = "1 month", date_labels = "%m") +
   labs(title = "Variación de defunciones no COVID-19 por comunidad en el verano de 2020",
