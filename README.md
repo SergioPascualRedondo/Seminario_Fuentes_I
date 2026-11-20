@@ -33,6 +33,7 @@ Analizar si el aumento de muertes en 2020 respecto a 2019 en las comunidades aut
 2. ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?
 3. ¿Qué parte de ese aumento corresponden a muertes por COVID-19?
 4. ¿Tiene relación ese aumento de muertes con las olas de calor?
+
 ## Metodología
 
 Se realiza un estudio descriptivo y exploratorio de 2020 utilizando información
@@ -66,6 +67,12 @@ gráficos y su análisis correspondiente.
   - `muertes_comunidad_autonoma_2020.json`
   - `49923.csv`: defunciones por COVID-19 por ccaa.
   - `poblacion.px`: población por ccaa
+  - `muertes_semana.json`
+  - `muertesCovidSemana.csv`
+  - `defunciones_semana_2020_2019.json`
+  
+-**INPUT/IMAGENES**:
+  - `fondo_seminario`
 
 
 - **SALIDA**: gráficos exportados en formato PNG, para consultarlos sin ejecutar el código
@@ -80,9 +87,15 @@ gráficos y su análisis correspondiente.
 
 # 4. RESULTADOS
 
+En 2020 hubo tres olas de calor en España. Castilla y León, Castilla-La Mancha y Andalucía aparecen en las tres. Asturias, Cantabria, Canarias, Extremadura, La Rioja, Ceuta y Melilla no aparecen en ninguna.
 
+Murió más gente que en 2019 en todas las comunidades (entre 47 y 345 más por cada 100.000 habitantes). La mayor parte se debe al COVID-19, pero en casi todas las comunidades quedan muertes de más que el COVID-19 no explica.
 
+Mirando el año entero, la relación entre los días de ola de calor y esas muertes de más es muy débil.
 
+Si miramos semana a semana en verano, en Castilla-La Mancha, Madrid, Cataluña y Castilla y León las muertes extra suben justo cuando llega la ola de calor de finales de julio. Pero también hay subidas parecidas en comunidades sin olas.
+
+**Conclusión:** Nuestros datos son compatibles con que las olas de calor contribuyeran a las muertes extra de 2020, pero no lo podemos confirmar ni descartar. Hay que tener en cuenta que los días de ola son una aproximación, que solo comparamos con 2019, que parte de las muertes "no COVID" pueden ser COVID-19 sin diagnosticar y que trabajamos con solo 19 comunidades.
 
 
 # 5.INSTRUCCIONES DE EJECUCIÓN

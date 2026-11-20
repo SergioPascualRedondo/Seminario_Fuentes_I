@@ -12,7 +12,7 @@ output:
 
 <style>
 body {
-  background-image: url("INPUT/DATA/fondo_seminario.png");
+  background-image: url("INPUT/IMAGENES/fondo_seminario.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
