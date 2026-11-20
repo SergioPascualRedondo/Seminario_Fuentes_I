@@ -352,6 +352,40 @@ datos_unidos
 
 ```
 
+```{r resumen-resultados, include=FALSE}
+# Calculamos las tasas ajustadas por población
+datos_tasas <- datos_unidos %>%
+  mutate(
+    var_defuncion_100k = round(var_defunciones / poblacion * 100000, 1),
+    covid_100k = round(muertes_covid / poblacion * 100000, 1),
+    resto_100k = round(defunciones_no_covid_100000, 1),
+    pct_covid = round(muertes_covid / var_defunciones * 100, 1)
+  )
+
+# Ordenamos las comunidades según el aumento de defunciones
+orden_aumento <- datos_tasas %>%
+  arrange(var_defuncion_100k)
+
+# Guardamos los resultados principales para utilizarlos en el texto
+resumen <- list(
+  n_olas = n_distinct(olas$id_ola),
+  n_provincias = nrow(olas_prov),
+  provincias_con_ola = sum(olas_prov$n_olas > 0),
+  n_ccaa = n_distinct(datos_unidos$ccaa),
+
+  ccaa_menor_aumento = orden_aumento$ccaa[1],
+  menor_aumento = orden_aumento$var_defuncion_100k[1],
+
+  ccaa_mayor_aumento = orden_aumento$ccaa[nrow(orden_aumento)],
+  mayor_aumento = orden_aumento$var_defuncion_100k[nrow(orden_aumento)],
+
+  porcentaje_covid_total = round(
+    sum(datos_unidos$muertes_covid, na.rm = TRUE) /
+      sum(datos_unidos$var_defunciones, na.rm = TRUE) * 100,
+    1
+  )
+)
+```
 ### 1. Introducción
 
 En nuestro seminario analizaremos si el aumento de muertes en 2020 respecto a 2019 en las distintas comunidades autónomas se relaciona con las olas de calor, teniendo en cuenta las muertes por COVID-19.
@@ -390,7 +424,7 @@ G1 <- ggplot(data = olas_ccaa_ola,
 G1
 ```
 
-Vemos que en 2020 hubo 3 olas de calor que afectaron de maneras distintas a las comunidades autónomas.
+En 2020 se registraron `r resumen$n_olas` olas de calor nacionales, que afectaron de manera diferente a las comunidades autónomas.
 
 - Castilla y León, Castilla-La Mancha y Andalucía sufrieron las 3 olas de calor, lo que suma aproximadamente unos 18 días de calor intenso.
 - Cataluña estuvo entre las olas 2 y 3 (15 días).
@@ -401,6 +435,7 @@ Vemos que en 2020 hubo 3 olas de calor que afectaron de maneras distintas a las 
 En este gráfico una comunidad suma los días de una ola si al menos una de sus provincias fue afectada por la ola. Las comunidades autónomas que no aparecen no sufrieron ninguna ola.
 
 **Gráfico 2: número de olas por provincia**
+De las `r resumen$n_provincias` provincias analizadas, `r resumen$provincias_con_ola` estuvieron incluidas en al menos una de las olas de calor nacionales registradas por AEMET.
 
 En este otro gráfico también utilizamos un diagrama de barras horizontales en el que representamos en el eje x en número de olas de calor y en el eje y las distintas provincias.
 
@@ -571,14 +606,6 @@ mapa_interactivo_olas
 A la hora de responder esta pregunta y las que tienen relación con las defunciones y las comunidades autónomas, utilizaremos las siguientes variables teniendo en cuenta la población de cada ccaa (tasas por 100.000 habitantes).
 
 ```{r tabla-tasas}
-datos_tasas <- datos_unidos %>%
-  mutate(
-    var_defuncion_100k = round(var_defunciones / poblacion * 1e5),
-    covid_100k = round(muertes_covid/ poblacion * 1e5),
-    resto_100k = round(defunciones_no_covid_100000),
-    pct_covid  = round(muertes_covid / var_defunciones) #proporcion del aumento de defunciones de 2020 que corresponde al COVID.
-
-  )
 datos_tasas
 ```
 
@@ -608,13 +635,19 @@ G3 <- datos_tasas %>%
 G3  
 
 ```
-Al ajustar por población, el aumento de muertes en 2020 respecto a 2019 varía mucho entre comunidades: 47 defunciones más por cada 100.000 habitantes en Canarias hasta 345 en Castilla y León, provincia donde el aumento de defunciones fue mayor de todo el país. 
+Al ajustar por población, el aumento de muertes en 2020 respecto a 2019 varía considerablemente entre las `r resumen$n_ccaa` comunidades y ciudades autónomas analizadas.
 
-El ajuste por cada 100.000 habitantes modifica el orden respecto a las cifras absolutas. Madrid y Cataluña eran las comunidades que más sumaban, pero en parte por su tamaño: por habitante, Castilla y León y Castilla-La Mancha las superan. Ocurre igual en Andalucía, que pasa de ser tercera en cifras absolutas a situarse en 108 por 100.000 habitantes.
+La comunidad con menor aumento fue **`r resumen$ccaa_menor_aumento`**, con aproximadamente **`r resumen$menor_aumento` defunciones adicionales por cada 100.000 habitantes**. En el extremo contrario, la comunidad con mayor aumento fue **`r resumen$ccaa_mayor_aumento`**, con aproximadamente **`r resumen$mayor_aumento` defunciones adicionales por cada 100.000 habitantes**.
 
-Este gráfico recoge el aumento total de defunciones, que incluye las muertes por COVID-19. En los siguientes gráficos analizaremos las defunciones por covid y por no covid por separado.
+El ajuste por población modifica el orden respecto a las cifras absolutas. Algunas comunidades con muchas defunciones, como Madrid, Cataluña o Andalucía, tienen también poblaciones más numerosas. Por esta razón, las tasas por cada 100.000 habitantes permiten realizar una comparación más adecuada entre territorios.
 
+Este gráfico recoge el aumento total de defunciones, incluidas las atribuidas oficialmente al COVID-19. En la siguiente pregunta analizamos qué parte de ese aumento corresponde al COVID-19.
 
+## Pregunta 3: ¿Qué parte del aumento de defunciones corresponde a muertes por COVID-19?
+
+En el conjunto de comunidades analizadas, las defunciones atribuidas oficialmente al COVID-19 representan aproximadamente el **`r resumen$porcentaje_covid_total` %** del aumento de defunciones observado en 2020 respecto a 2019.
+
+Para estudiar las diferencias territoriales, separamos en cada comunidad las muertes atribuidas al COVID-19 y el exceso de mortalidad restante.
 ```{r g4-aumento-defunciones-covid-y-resto, fig.width=7, fig.height=7}
 muertes_causa <- bind_rows(
   datos_tasas %>% transmute(ccaa, causa = "COVID-19",
