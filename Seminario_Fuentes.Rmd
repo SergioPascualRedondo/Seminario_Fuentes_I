@@ -10,6 +10,29 @@ output:
     df_print: paged
 ---
 
+<style>
+body {
+  background-image: url("INPUT/DATA/fondo_seminario.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+#TOC,
+.tocify,
+.tocify-header {
+  background-color: transparent !important;
+}
+</style>
+
+
+
 ```{r instalar, eval=FALSE}
 install.packages(c("tidyverse", "jsonlite", "tidyjson", "pxR", "mapSpain"))
 install.packages("mapSpain")
