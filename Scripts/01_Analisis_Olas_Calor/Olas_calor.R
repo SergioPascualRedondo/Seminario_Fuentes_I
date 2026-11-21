@@ -106,10 +106,9 @@ G2 <- olas_prov %>%
 G2
 
 
-# ============================================================
-# 
+
 # MAPA DE DÍAS DE OLA DE CALOR POR PROVINCIA
-# ============================================================
+
 
 # Obtenemos las geometrías de las provincias españolas.
 # Canarias se desplaza para obtener un mapa más compacto.
@@ -241,7 +240,7 @@ mapa_interactivo_olas
 # Gráfico 1: olas por comunidad autónoma.
 
 ggsave(
-  filename = "SALIDA/FIGURAS/G1_olas_CCAA.png",
+  filename = "SALIDA/FIGURAS/Pregunta_1/G1_olas_CCAA.png",
   plot = G1,
   width = 9,
   height = 6,
@@ -252,7 +251,7 @@ ggsave(
 # Gráfico 2: número de olas por provincia.
 
 ggsave(
-  filename = "SALIDA/FIGURAS/G2_olas_provincias.png",
+  filename = "SALIDA/FIGURAS/Pregunta_1/G2_olas_provincias.png",
   plot = G2,
   width = 9,
   height = 8,
@@ -263,7 +262,7 @@ ggsave(
 # Gráfico 8: versión estática del mapa.
 
 ggsave(
-  filename = "SALIDA/FIGURAS/G8_mapa_olas_provincias.png",
+  filename = "SALIDA/FIGURAS/Pregunta_1/G8_mapa_olas_provincias.png",
   plot = G8,
   width = 10,
   height = 7,
@@ -275,6 +274,6 @@ ggsave(
 
 htmlwidgets::saveWidget(
   widget = mapa_interactivo_olas,
-  file = "SALIDA/FIGURAS/G8_mapa_interactivo_olas.html",
+  file = "SALIDA/FIGURAS/Pregunta_1/G8_mapa_interactivo_olas.html",
   selfcontained = TRUE
 )

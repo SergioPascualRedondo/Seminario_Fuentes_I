@@ -820,7 +820,7 @@ Otra posible explicación es que las comunidades con más días de ola son tambi
 Por todos estos motivos, los datos anuales mezclan demasiados efectos y no nos permiten llegar a una conclusión válida. Para aislar el efecto real de las temperaturas analizamos únicamente los datos semanales centrados en los meses de verano.
 
 
-### Gráfico 10:variación de defunciones por CCAA con olas y sin olas de calor
+### Gráfico 10:variación de defunciones por CCAA  según la inclusión en las olas nacionales
 
 Dividimos las comunidades en dos grupos: las que figuran en alguna ola de calor de 2020 y las que no (Asturias, Cantabria, Canarias, Extremadura, La Rioja, Ceuta y Melilla). Para cada grupo calculamos, semana a semana, la variación de defunciones respecto a la misma semana de 2019, restando las muertes por COVID-19, por cada 100.000 habitantes. Nos centramos en las semanas 22 a 38 (finales de mayo a septiembre), cuando la incidencia del COVID-19 era menor y es menos probable que el exceso "no COVID" sea en realidad COVID-19 sin identificar. La línea gris marca el 0 (misma mortalidad que en 2019) y las franjas naranjas indican las fechas de las tres olas de calor nacionales, las cuales solo afectan a las comunidades del grupo "con ola".
 

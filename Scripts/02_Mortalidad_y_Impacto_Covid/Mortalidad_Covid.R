@@ -96,14 +96,14 @@ G6 <- datos_tasas %>%
 G6 
 
 #Exportar gráficos
-ggsave("SALIDA/FIGURAS/G3_aumento_defunciones.png",
+ggsave("SALIDA/FIGURAS/Pregunta_2/G3_aumento_defunciones.png",
        plot = G3, width = 9, height = 6, dpi = 300)
 
-ggsave("SALIDA/FIGURAS/G4_apiladas_absolutas.png",
+ggsave("SALIDA/FIGURAS/Pregunta_3/G4_apiladas_absolutas.png",
        plot = G4, width = 9, height = 6, dpi = 300)
 
-ggsave("SALIDA/FIGURAS/G5_apiladas_porcentaje.png",
+ggsave("SALIDA/FIGURAS/Pregunta_3/G5_apiladas_porcentaje.png",
        plot = G5, width = 9, height = 6, dpi = 300)
 
-ggsave("SALIDA/FIGURAS/G6_dispersion_covid.png",
+ggsave("SALIDA/FIGURAS/Pregunta_3/G6_dispersion_covid.png",
        plot = G6, width = 8, height = 6, dpi = 300)

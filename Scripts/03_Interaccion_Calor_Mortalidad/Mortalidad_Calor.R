@@ -25,31 +25,38 @@ G7 <- ggplot(datos_g7,aes(x = dias_ola_media,
   ) +
   theme_minimal()
 
-G7
-ggsave(
-  "SALIDA/FIGURAS/G7_calor_mortalidad_no_covid.png",
-  plot = G7,width = 9,height = 6,dpi = 300
-)
 
 
-#Gráfico 8: variacion de defunciones (sin covid) frente a las comunidades con y sin ola de calor
+
+# Gráfico 10: variación de defunciones según la inclusión
+# en las olas nacionales de AEMET
 
 exposicion <- exceso_no_covid %>%
   group_by(ccaa) %>%
   summarise(dias_ola_total = sum(dias_ola), .groups = "drop") %>%
-  mutate(grupo = ifelse(dias_ola_total > 0, "Comunidades con ola", "Comunidades sin ola"))
-
+  mutate(
+    grupo = ifelse(
+      dias_ola_total > 0,
+      "Incluidas en alguna ola nacional",
+      "No incluidas en las olas nacionales"
+    )
+  )
 
 lineas <- exceso_no_covid %>%
   left_join(exposicion, by = "ccaa") %>%
   group_by(grupo, semana, fecha_2020) %>%
-  summarise(tasa = sum(variacion_no_covid) / sum(poblacion) * 1e5, .groups = "drop") %>%
-  filter(semana >= 22, semana <= 38) #filtramos por las semanas en las que hay alguna ola de calor
-lineas 
+  summarise(
+    tasa = sum(variacion_no_covid) / sum(poblacion) * 1e5,
+    .groups = "drop"
+  ) %>%
+  filter(semana >= 22, semana <= 38) #periodo de estudio del verano
 
-olas_fechas <- olas %>% 
+lineas
+
+olas_fechas <- olas %>%
   distinct(id_ola, fecha_inicio, fecha_fin)
-olas_fechas 
+
+olas_fechas
 
 G10<- ggplot(lineas, aes(x = fecha_2020, y = tasa, colour = grupo)) +
   geom_rect(data = olas_fechas,
@@ -93,12 +100,15 @@ G9 <- ggplot(ventanas, aes(x = fecha_2020, y = variacion_no_covid_100k)) +
        x = "Mes", y = "Variación por 100.000 hab. (frente a 2019)") +
   theme_minimal()
 G9
+#EXPORTACION
 
-
+G7
+ggsave("SALIDA/FIGURAS/Pregunta_4/G7_calor_mortalidad_no_covid.png",
+       plot = G7, width = 9, height = 6, dpi = 300)
 
 
 ggsave("SALIDA/FIGURAS/G10_var_defunciones_ola.png",
        plot = G10, width = 9, height = 6, dpi = 300)
 
-ggsave("SALIDA/FIGURAS/G9_facetas.png",
+ggsave("SALIDA/FIGURAS/Pregunta_4/G9_facetas.png",
        plot = G9, width = 9, height = 6, dpi = 300)
