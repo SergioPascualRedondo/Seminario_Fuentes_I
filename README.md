@@ -9,6 +9,9 @@
 **Asignatura**: Fuentes de Datos Biomédicos y Web Semántica
 
 ---
+<p align="center">
+  <img src="INPUT/IMAGENES/wordcloud.png" width="850">
+</p>
 
 # 1. INTRODUCCIÓN
 
@@ -19,7 +22,7 @@ complicado en algunos casos separar su efecto. No está claro si, una vez descon
 autónoma en 2020 con respecto a 2019 guarda relación con la exposición a olas de calor.
 
 
-Vamos a estudiar esta cuestión con fuentes oficiales (AEMET e INE), utilizando R y datos en formato JSON y CSV.
+Vamos a estudiar esta cuestión con fuentes oficiales (AEMET e INE), utilizando R y datos en formato JSON, CSV y PC-AXIS.
 
 # 2. OBJETIVOS
 
@@ -101,7 +104,5 @@ Si miramos semana a semana en verano, en Castilla-La Mancha, Madrid, Cataluña y
 # 5.INSTRUCCIONES DE EJECUCIÓN
 
 
-
-
-
 # 6. REFERENCIAS Y RECURSOS
+

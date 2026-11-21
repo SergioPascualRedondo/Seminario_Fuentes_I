@@ -48,8 +48,8 @@ library(tidyverse)
 library(jsonlite)
 library(tidyjson)
 library(pxR)
-library(mapSpain)
 library(plotly)
+library(mapSpain)
 ```
 
 Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 (aumento en 2020 frente 2019) en las distintas comunidades autónomas y de las olas de calor por provincia. También importamos el archivo csv correspondiente a las muertes por covid en ese mismo año y los datos de población (INE) de 2020 en formato PC-Axis.
@@ -77,7 +77,7 @@ muertes_json %>%
   spread_all()%>%
   gather_object() %>%
   json_types() %>%
-  count (name, type)
+  dplyr::count (name, type)
  
 #entramos capa a capa hasta la tabla de datos y la aplanamos
 muertes <- muertes_json %>%
@@ -103,7 +103,7 @@ olas_json %>%
   spread_all()%>%
   gather_object() %>%
   json_types () %>%
-  count (name, type)   #datos sigue siendo un array
+  dplyr::count (name, type)   #datos sigue siendo un array
   
 olas <- olas_json %>%
   enter_object("datos")%>%
@@ -153,7 +153,7 @@ covid
 ```
 ### Defunciones semanales por comunidad autónoma en 2020
 
-Los datos proceden de la Estimación del número de defunciones semanales del Instituto Nacional de Estadística. El archivo contiene las defunciones registradas durante cada semana de 2020 para todas las comunidades autónomas.
+Los datos proceden de la Estimación del número de defunciones semanales del Instituto Nacional de Estadística. El archivo contiene las defunciones registradas durante cada semana de 2020 y 2019 para todas las comunidades autónomas.
 
 ```{r importar-defunciones-semanales}
 muertes_semana_json <- leer_json("INPUT/DATA/defunciones_semana_2020_2019.json")
@@ -162,7 +162,7 @@ muertes_semana_json %>%
   gather_array() %>%
   gather_object() %>%
   json_types() %>%
-  count(name, type) #Data y metaData son array 
+  dplyr::count(name, type) #Data y metaData son array 
 
 
 muertes_sem <- muertes_semana_json%>%
@@ -822,7 +822,7 @@ Por todos estos motivos, los datos anuales mezclan demasiados efectos y no nos p
 
 ### Gráfico 10:variación de defunciones por CCAA  según la inclusión en las olas nacionales
 
-Dividimos las comunidades en dos grupos: las que figuran en alguna ola de calor de 2020 y las que no (Asturias, Cantabria, Canarias, Extremadura, La Rioja, Ceuta y Melilla). Para cada grupo calculamos, semana a semana, la variación de defunciones respecto a la misma semana de 2019, restando las muertes por COVID-19, por cada 100.000 habitantes. Nos centramos en las semanas 22 a 38 (finales de mayo a septiembre), cuando la incidencia del COVID-19 era menor y es menos probable que el exceso "no COVID" sea en realidad COVID-19 sin identificar. La línea gris marca el 0 (misma mortalidad que en 2019) y las franjas naranjas indican las fechas de las tres olas de calor nacionales, las cuales solo afectan a las comunidades del grupo "con ola".
+Dividimos las comunidades en dos grupos: las que figuran en alguna ola de calor de 2020 y las que no (Asturias, Cantabria, Canarias, Extremadura, La Rioja, Ceuta y Melilla). Para cada grupo calculamos, semana a semana, la variación de defunciones respecto a la misma semana de 2019, restando las muertes por COVID-19, por cada 100.000 habitantes. Nos centramos en las semanas 22 a 38 (finales de mayo a septiembre), periodo en el que tienen lugar las olas de calor y cuando la incidencia del COVID-19 era menor y es menos probable que el exceso "no COVID" sea en realidad COVID-19 sin identificar. La línea gris marca el 0 (misma mortalidad que en 2019) y las franjas naranjas indican las fechas de las tres olas de calor nacionales, las cuales solo afectan a las comunidades del grupo "con ola".
 
 
 ```{r G10-var-defunciones-ola, fig.width=9, fig.height=5}
@@ -861,7 +861,7 @@ Por otro lado, las comunidades no incluidas en las olas nacionales (línea azul)
 
 ### Gráfico 9: variaciones de defunción en los meses de verano
 
-Repetimos el mismo análisis pero esta vez separado por comunidades, ordenadas de más a menos días de olas de calor. Cada franja naranja corresponde a las olas que afectaron específicamente a esa comunidad. Como cada panel tiene su propia escala vertial no debemos comparar el tanaño de los picos entre gráficas, sio fijarnos en si el momento en el que sube la mortalidad coincide temporalmente con las franjas naranjas de las olas. 
+Repetimos el mismo análisis pero esta vez separado por comunidades, ordenadas de más a menos días de olas de calor. Cada franja naranja corresponde a las olas que afectaron específicamente a esa comunidad. Como cada panel tiene su propia escala vertial no debemos comparar el tanaño de los picos entre gráficas, sino fijarnos en si el momento en el que sube la mortalidad coincide temporalmente con las franjas naranjas de las olas. 
 
 ```{r G9-facetas-defunciones-ola, fig.width=10, fig.height=11}
 ventanas <- exceso_no_covid %>%
