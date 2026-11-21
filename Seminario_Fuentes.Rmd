@@ -31,11 +31,13 @@ body {
 }
 </style>
 
+## Paquetes necesarios
 
+Antes de ejecutar el proyecto por primera vez, es necesario instalar los siguientes paquetes de R:
 
 ```{r instalar, eval=FALSE}
-install.packages(c("tidyverse", "jsonlite", "tidyjson", "pxR", "mapSpain"))
-install.packages("mapSpain")
+install.packages(c("tidyverse","jsonlite","tidyjson","pxR","mapSpain","plotly"))
+
 ```
 
 ```{r setup, include=FALSE}
@@ -45,8 +47,9 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, comment = N
 library(tidyverse)
 library(jsonlite)
 library(tidyjson)
-library(readr)
+library(pxR)
 library(mapSpain)
+library(plotly)
 ```
 
 Importamos los datos (.json) correspondientes a las muertes ocurridas en 2020 (aumento en 2020 frente 2019) en las distintas comunidades autónomas y de las olas de calor por provincia. También importamos el archivo csv correspondiente a las muertes por covid en ese mismo año y los datos de población (INE) de 2020 en formato PC-Axis.
@@ -666,19 +669,21 @@ muertes_causa <- bind_rows(
 )
 
 G4 <- muertes_causa %>%
-  ggplot(mapping = aes(x = reorder(ccaa, defunciones, sum),
-                       y = defunciones, fill = causa)) +
-  geom_col(position = "fill") +                                          
-  coord_flip() +                                        
+  ggplot(aes(x = reorder(ccaa, defunciones, sum),
+             y = defunciones, fill = causa)) +
+  geom_col(position = "fill") +
+  coord_flip() +
   scale_fill_manual(values = c("COVID-19" = "red",
-                               "No COVID-19" = "orange")) + 
-  labs(x = "CCAA",
-       y = "Aumento de defunciones por cada 100.000hab (2020 respecto a 2019)",
+                               "No atribuido al COVID-19" = "orange")) +
+  scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
+  labs(x = "Comunidad autónoma",
+       y = "Proporción del aumento de defunciones",
        fill = "",
-       title = "Aumento de defunciones en 2020 por cada 100.000hab: COVID-19 y resto") +
-  theme_minimal()                                       
+       title = "Proporción del aumento de defunciones atribuida al COVID-19",
+       subtitle = "COVID-19 identificado y exceso de mortalidad restante, 2020") +
+  theme_minimal()
 
-G4 
+G4
 ```
 
 Obviamente, la mayoría del aumento de defunciones de 2020 con respecto 2019 se debe a los casos de muerte por COVID-19, ya que esta pandemia se llevo una gran cantidad de vidas por todo el mundo. 
