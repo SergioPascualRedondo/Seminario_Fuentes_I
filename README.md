@@ -10,7 +10,7 @@
 
 ---
 <p align="center">
-  <img src="INPUT/IMAGENES/wordcloud.png" width="850">
+  <img src="INPUT/IMAGENES/wordcloud.png" width="450">
 </p>
 
 # 1. INTRODUCCIÓN
