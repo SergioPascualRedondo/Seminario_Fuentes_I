@@ -75,8 +75,8 @@ gráficos y su análisis correspondiente.
   - `defunciones_semana_2020_2019.json`
   
 -**INPUT/IMAGENES**:
-  - `fondo_seminario`
-
+  - `fondo_seminario.png`
+  - `wordcloud.png`
 
 - **SALIDA**: gráficos exportados en formato PNG, para consultarlos sin ejecutar el código
 
@@ -102,7 +102,21 @@ Si miramos semana a semana en verano, en Castilla-La Mancha, Madrid, Cataluña y
 
 
 # 5.INSTRUCCIONES DE EJECUCIÓN
+Para reproducir este seminario en tu equipo debes seguir los siguientes pasos:
 
+1. **Clonar el repositorio**:
+  ```bash
+  git clone https://github.com/SergioPascualRedondo/Seminario_Fuentes_I`
+  ```
+  
+2. **Instalar las dependencias**:
+``` r
+install.packages(c("tidyverse","jsonlite","tidyjson","pxR","mapSpain","plotly"))`
+```
+3. **Generar el informe**: abre `Seminario_Fuentes.Rmd` en RStudio y pulsa **knit**. 
+Se generará `Seminario_Fuentes.html`.
 
 # 6. REFERENCIAS Y RECURSOS
-
+**Fuentes de Datos**: 
+- INE: Instituto Nacional de Estadística
+- EpData: plataforma de análisis y visualización de datos de Europa Press. 
