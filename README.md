@@ -160,6 +160,15 @@ https://www.epdata.es/comunidades-autonomas-donde-mas-aumentaron-muertes-2020-re
 
 Instituto Nacional de Estadística. (s. f.). *Estimación del número de defunciones semanales*. Recuperado el 23 de noviembre de 2026, de  
 https://www.ine.es/dynt3/inebase/index.htm?capsel=8465&padre=6480
+# 7. LICENCIA Y REUTILIZACIÓN
+
+El código original desarrollado para este proyecto se distribuye bajo la licencia MIT. Esta licencia no se aplica a los conjuntos de datos incluidos en `INPUT/DATA`, que conservan las condiciones de uso y reutilización establecidas por sus respectivas fuentes.
+
+- **AEMET:** información reutilizada indicando “Fuente: AEMET”.
+- **INE:** información estadística reutilizada bajo licencia CC BY 4.0, indicando su procedencia.
+- **EpData:** los datos conservan las condiciones de uso establecidas por la fuente original.
+
+Los apuntes de la asignatura se citan únicamente como material docente y no se redistribuyen en este repositorio.
 
 R Core Team. (2024). *R: A language and environment for statistical computing* (Version 4.4.1) [Computer software]. R Foundation for Statistical Computing.  
 https://www.R-project.org/
