@@ -119,4 +119,12 @@ Se generará `Seminario_Fuentes.html`.
 # 6. REFERENCIAS Y RECURSOS
 **Fuentes de Datos**: 
 - INE: Instituto Nacional de Estadística
-- EpData: plataforma de análisis y visualización de datos de Europa Press. 
+  Instituto Nacional de Estadística [INE]. (s. f.). *INE. Instituto Nacional de Estadística*. https://www.ine.es/
+
+- EpData: plataforma de análisis y visualización de datos de Europa Press.
+  * EpData. (s. f.). *EpData: Análisis y visualización de datos verificados para medios y profesionales*. https://www.epdata.es/
+ 
+- Artículo relacionado:
+  * Bose-O'Reilly, S., et al. (2021). COVID-19 and heat waves: New challenges for healthcare systems. *Environmental Research*, 198, 111153. https://doi.org/10.1016/j.envres.2021.111153
+
+
