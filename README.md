@@ -37,20 +37,23 @@ Analizar si el aumento de muertes en 2020 respecto a 2019 en las comunidades aut
 3. ¿Qué parte de ese aumento corresponden a muertes por COVID-19?
 4. ¿Tiene relación ese aumento de muertes con las olas de calor?
 
+
 ## Metodología
 
-Se realiza un estudio descriptivo y exploratorio de 2020 utilizando información
-agregada por provincia y comunidad autónoma. Los datos proceden de cuatro
-fuentes y se encuentran en diferentes formatos:
+Se realiza un estudio descriptivo y exploratorio de 2020 utilizando información agregada por provincia y comunidad autónoma. Para ello se utilizan varios conjuntos de datos procedentes principalmente de AEMET, EpData y el INE:
 
-- Datos de olas de calor por provincia en formato JSON: listado de provincias afectadas en cada una de las tres olas de calor nacionales en 2020 según AEMET.
-- Datos de variación de defunciones por comunidad autónoma en formato JSON: aumento de defunciones en 2020 respecto a 2019, procedente del INE a través de epdata.
-- Datos de muertes atribuidas a COVID-19 en formato CSV: muertes por COVID-10 con virus identificado en 2020 por comunidad autónoma, del INE.
-- Datos de población por comunidad autónoma en formato PC-Axis: población de 2020, del INE.
+- Datos de olas de calor por provincia en formato JSON: provincias incluidas en cada una de las tres olas de calor nacionales registradas en 2020 (Agencia Estatal de Meteorología [AEMET], 2021).
+- Datos de variación de defunciones por comunidad autónoma en formato JSON: aumento de las defunciones en 2020 respecto a 2019, procedente del INE a través de EpData (EpData, s. f.).
+- Datos de defunciones atribuidas al COVID-19 por comunidad autónoma en formato CSV (Instituto Nacional de Estadística [INE], s. f.).
+- Datos de población por comunidad autónoma en 2020, descargados del INE en formato PC-Axis (INE, s. f.).
+- Datos de defunciones semanales de 2019 y 2020 por comunidad autónoma (INE, s. f.).
+- Datos de defunciones semanales atribuidas al COVID-19 durante 2020 (INE, s. f.).
 
-Las fuentes se importan, limpian y homogeneizan en R para utilizar nombres comunes de comunidades autónomas. Las olas de calor, que vienen por provincia, se agrupan por comunidad
-calculando la media de días de ola por provincia. Posteriormente, se integran mediante operaciones de unión todas las fuentes y se calcula la variación de defunciones no atribuida 
-a COVID-19 por cada 100.000 habitantes.
+Las fuentes se importan, limpian y homogeneizan en R para utilizar nombres comunes de comunidades autónomas. Las olas de calor, originalmente registradas por provincia, se agrupan por comunidad autónoma calculando la media de días de ola por provincia. Posteriormente, las diferentes tablas se integran mediante operaciones de unión y se calcula el aumento de defunciones no atribuido oficialmente al COVID-19 por cada 100.000 habitantes.
+
+La importación, transformación, unión y visualización de los datos se realizó con R 4.4.1 (R Core Team, 2024), siguiendo los procedimientos trabajados en la asignatura (Cánepa, 2026).
+
+El análisis permite identificar asociaciones y patrones territoriales, pero no establecer una relación causal entre las olas de calor y las defunciones.
 
 El análisis permite detectar asociaciones y patrones territoriales, pero no establecer una relación causal entre las olas de calor y las defunciones.
 
@@ -74,7 +77,7 @@ gráficos y su análisis correspondiente.
   - `muertesCovidSemana.csv`
   - `defunciones_semana_2020_2019.json`
   
--**INPUT/IMAGENES**:
+- **INPUT/IMAGENES**:
   - `fondo_seminario.png`
   - `wordcloud.png`
 
@@ -101,30 +104,73 @@ Si miramos semana a semana en verano, en Castilla-La Mancha, Madrid, Cataluña y
 **Conclusión:** Nuestros datos son compatibles con que las olas de calor contribuyeran a las muertes extra de 2020, pero no lo podemos confirmar ni descartar. Hay que tener en cuenta que los días de ola son una aproximación, que solo comparamos con 2019, que parte de las muertes "no COVID" pueden ser COVID-19 sin diagnosticar y que trabajamos con solo 19 comunidades.
 
 
-# 5.INSTRUCCIONES DE EJECUCIÓN
-Para reproducir este seminario en tu equipo debes seguir los siguientes pasos:
+# 5. INSTRUCCIONES DE EJECUCIÓN
 
-1. **Clonar el repositorio**:
-  ```bash
-  git clone https://github.com/SergioPascualRedondo/Seminario_Fuentes_I`
-  ```
-  
-2. **Instalar las dependencias**:
-``` r
-install.packages(c("tidyverse","jsonlite","tidyjson","pxR","mapSpain","plotly"))`
+Para reproducir este seminario se recomienda utilizar **R 4.4.1**.
+
+## Dependencias
+
+El proyecto ha sido desarrollado y comprobado con las siguientes versiones:
+
+| Paquete | Versión |
+|:---|:---:|
+| `tidyverse` | 2.0.0 |
+| `jsonlite` | 2.0.0 |
+| `tidyjson` | 0.3.3.1 |
+| `pxR` | 0.42.8 |
+| `mapSpain` | 1.2.1 |
+| `plotly` | 4.12.1 |
+| `knitr` | 1.48 |
+| `rmarkdown` | 2.28 |
+
+Para ejecutar el proyecto deben seguirse estos pasos:
+
+1. **Clonar el repositorio:**
+
+```bash
+git clone https://github.com/SergioPascualRedondo/Seminario_Fuentes_I
 ```
-3. **Generar el informe**: abre `Seminario_Fuentes.Rmd` en RStudio y pulsa **knit**. 
-Se generará `Seminario_Fuentes.html`.
+
+2. **Instalar las dependencias:**
+
+```r
+install.packages(c(
+  "tidyverse",
+  "jsonlite",
+  "tidyjson",
+  "pxR",
+  "mapSpain",
+  "plotly",
+  "knitr",
+  "rmarkdown"
+))
+```
+
+3. **Generar el informe:** abrir `Seminario_Fuentes.Rmd` en RStudio y pulsar **Knit**. Se generará automáticamente el archivo `Seminario_Fuentes.html`.
 
 # 6. REFERENCIAS Y RECURSOS
-**Fuentes de Datos**: 
-- INE: Instituto Nacional de Estadística
-  Instituto Nacional de Estadística [INE]. (s. f.). *INE. Instituto Nacional de Estadística*. https://www.ine.es/
 
-- EpData: plataforma de análisis y visualización de datos de Europa Press.
-  * EpData. (s. f.). *EpData: Análisis y visualización de datos verificados para medios y profesionales*. https://www.epdata.es/
- 
-- Artículo relacionado:
-  * Bose-O'Reilly, S., et al. (2021). COVID-19 and heat waves: New challenges for healthcare systems. *Environmental Research*, 198, 111153. https://doi.org/10.1016/j.envres.2021.111153
+Agencia Estatal de Meteorología. (2021). *Informe anual 2020*.  
+https://www.aemet.es/documentos/es/conocenos/a_que_nos_dedicamos/informes/InformeAnualAEMET_2020_web.pdf
+
+Cánepa, A. (2026). *Apuntes de la asignatura Fuentes de Datos Biomédicos y Web Semántica* [Material docente no publicado].
+
+EpData. (s. f.). *Comunidades autónomas en donde más aumentaron las muertes en 2020 respecto al año anterior*.  
+https://www.epdata.es/comunidades-autonomas-donde-mas-aumentaron-muertes-2020-respecto-ano-anterior/ae983682-4d79-404e-ba6d-ee481aeeeff2
+
+Instituto Nacional de Estadística. (s. f.). *Estimación del número de defunciones semanales*. Recuperado el 23 de noviembre de 2026, de  
+https://www.ine.es/dynt3/inebase/index.htm?capsel=8465&padre=6480
+# 7. LICENCIA Y REUTILIZACIÓN
+
+El código original desarrollado para este proyecto se distribuye bajo la licencia MIT. Esta licencia no se aplica a los conjuntos de datos incluidos en `INPUT/DATA`, que conservan las condiciones de uso y reutilización establecidas por sus respectivas fuentes.
+
+- **AEMET:** información reutilizada indicando “Fuente: AEMET”.
+- **INE:** información estadística reutilizada bajo licencia CC BY 4.0, indicando su procedencia.
+- **EpData:** los datos conservan las condiciones de uso establecidas por la fuente original.
+
+Los apuntes de la asignatura se citan únicamente como material docente y no se redistribuyen en este repositorio.
+
+R Core Team. (2024). *R: A language and environment for statistical computing* (Version 4.4.1) [Computer software]. R Foundation for Statistical Computing.  
+https://www.R-project.org/
 
 
