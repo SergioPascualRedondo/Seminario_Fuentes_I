@@ -101,30 +101,64 @@ Si miramos semana a semana en verano, en Castilla-La Mancha, Madrid, Cataluña y
 **Conclusión:** Nuestros datos son compatibles con que las olas de calor contribuyeran a las muertes extra de 2020, pero no lo podemos confirmar ni descartar. Hay que tener en cuenta que los días de ola son una aproximación, que solo comparamos con 2019, que parte de las muertes "no COVID" pueden ser COVID-19 sin diagnosticar y que trabajamos con solo 19 comunidades.
 
 
-# 5.INSTRUCCIONES DE EJECUCIÓN
-Para reproducir este seminario en tu equipo debes seguir los siguientes pasos:
+# 5. INSTRUCCIONES DE EJECUCIÓN
 
-1. **Clonar el repositorio**:
-  ```bash
-  git clone https://github.com/SergioPascualRedondo/Seminario_Fuentes_I`
-  ```
-  
-2. **Instalar las dependencias**:
-``` r
-install.packages(c("tidyverse","jsonlite","tidyjson","pxR","mapSpain","plotly"))`
+Para reproducir este seminario se recomienda utilizar **R 4.4.1**.
+
+## Dependencias
+
+El proyecto ha sido desarrollado y comprobado con las siguientes versiones:
+
+| Paquete | Versión |
+|:---|:---:|
+| `tidyverse` | 2.0.0 |
+| `jsonlite` | 2.0.0 |
+| `tidyjson` | 0.3.3.1 |
+| `pxR` | 0.42.8 |
+| `mapSpain` | 1.2.1 |
+| `plotly` | 4.12.1 |
+| `knitr` | 1.48 |
+| `rmarkdown` | 2.28 |
+
+Para ejecutar el proyecto deben seguirse estos pasos:
+
+1. **Clonar el repositorio:**
+
+```bash
+git clone https://github.com/SergioPascualRedondo/Seminario_Fuentes_I
 ```
-3. **Generar el informe**: abre `Seminario_Fuentes.Rmd` en RStudio y pulsa **knit**. 
-Se generará `Seminario_Fuentes.html`.
+
+2. **Instalar las dependencias:**
+
+```r
+install.packages(c(
+  "tidyverse",
+  "jsonlite",
+  "tidyjson",
+  "pxR",
+  "mapSpain",
+  "plotly",
+  "knitr",
+  "rmarkdown"
+))
+```
+
+3. **Generar el informe:** abrir `Seminario_Fuentes.Rmd` en RStudio y pulsar **Knit**. Se generará automáticamente el archivo `Seminario_Fuentes.html`.
 
 # 6. REFERENCIAS Y RECURSOS
-**Fuentes de Datos**: 
-- INE: Instituto Nacional de Estadística
-  Instituto Nacional de Estadística [INE]. (s. f.). *INE. Instituto Nacional de Estadística*. https://www.ine.es/
 
-- EpData: plataforma de análisis y visualización de datos de Europa Press.
-  * EpData. (s. f.). *EpData: Análisis y visualización de datos verificados para medios y profesionales*. https://www.epdata.es/
- 
-- Artículo relacionado:
-  * Bose-O'Reilly, S., et al. (2021). COVID-19 and heat waves: New challenges for healthcare systems. *Environmental Research*, 198, 111153. https://doi.org/10.1016/j.envres.2021.111153
+Agencia Estatal de Meteorología. (2021). *Informe anual 2020*.  
+https://www.aemet.es/documentos/es/conocenos/a_que_nos_dedicamos/informes/InformeAnualAEMET_2020_web.pdf
+
+Cánepa, A. (2026). *Apuntes de la asignatura Fuentes de Datos Biomédicos y Web Semántica* [Material docente no publicado].
+
+EpData. (s. f.). *Comunidades autónomas en donde más aumentaron las muertes en 2020 respecto al año anterior*.  
+https://www.epdata.es/comunidades-autonomas-donde-mas-aumentaron-muertes-2020-respecto-ano-anterior/ae983682-4d79-404e-ba6d-ee481aeeeff2
+
+Instituto Nacional de Estadística. (s. f.). *Estimación del número de defunciones semanales*. Recuperado el 23 de noviembre de 2026, de  
+https://www.ine.es/dynt3/inebase/index.htm?capsel=8465&padre=6480
+
+R Core Team. (2024). *R: A language and environment for statistical computing* (Version 4.4.1) [Computer software]. R Foundation for Statistical Computing.  
+https://www.R-project.org/
 
 
