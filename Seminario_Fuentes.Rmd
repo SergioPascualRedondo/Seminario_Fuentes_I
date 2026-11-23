@@ -675,7 +675,7 @@ G4 <- muertes_causa %>%
   geom_col(position = "fill") +
   coord_flip() +
   scale_fill_manual(values = c("COVID-19" = "red",
-                               "No atribuido al COVID-19" = "orange")) +
+                               "No COVID-19" = "orange")) +
   scale_y_continuous(labels = scales::label_percent(accuracy = 1)) +
   labs(x = "Comunidad autónoma",
        y = "Proporción del aumento de defunciones",
