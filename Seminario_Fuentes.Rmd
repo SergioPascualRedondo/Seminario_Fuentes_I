@@ -613,6 +613,11 @@ mapa_interactivo_olas <- plotly::ggplotly(
 mapa_interactivo_olas
 ```
 
+Para poder estudiar de manera más visual el impacto de las olas de calor en cada provincia, hemos realizado este mapa. El color indica los días de ola de calor en 2020 en los que figura cada provincia, sumando los de las tres olas. Comprobamos que la exposición de las olas de calor en 2020 fue desigual en el territorio. Algunas provincias tuvieron hasta 18 días de ola (entre las 3 olas) mientras otras no tuvieron ni uno. 
+La exposición también varía dentro de la misma ccaa: en Andalucía, las provincias de Sevilla y Huelva no tuvieron ninguna ola mientras que en provincias como Almería, Jaén y Málaga sufrieron las 3 olas. En Castilla y León ocurre lo mismo, en Segovia hubo 18 días de ola, sin embargo en Burgos hubo solo 6.
+
+En los siguientes gráficos estudiamos las defunciones en cada comunidad autónoma teniendo en cuenta el COVID-19.
+
 ## Pregunta 2: ¿En qué comunidades aumentaron más las defunciones en 2020 respecto a 2019?
 
 
