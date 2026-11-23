@@ -37,20 +37,23 @@ Analizar si el aumento de muertes en 2020 respecto a 2019 en las comunidades aut
 3. ¿Qué parte de ese aumento corresponden a muertes por COVID-19?
 4. ¿Tiene relación ese aumento de muertes con las olas de calor?
 
+
 ## Metodología
 
-Se realiza un estudio descriptivo y exploratorio de 2020 utilizando información
-agregada por provincia y comunidad autónoma. Los datos proceden de cuatro
-fuentes y se encuentran en diferentes formatos:
+Se realiza un estudio descriptivo y exploratorio de 2020 utilizando información agregada por provincia y comunidad autónoma. Para ello se utilizan varios conjuntos de datos procedentes principalmente de AEMET, EpData y el INE:
 
-- Datos de olas de calor por provincia en formato JSON: listado de provincias afectadas en cada una de las tres olas de calor nacionales en 2020 según AEMET.
-- Datos de variación de defunciones por comunidad autónoma en formato JSON: aumento de defunciones en 2020 respecto a 2019, procedente del INE a través de epdata.
-- Datos de muertes atribuidas a COVID-19 en formato CSV: muertes por COVID-10 con virus identificado en 2020 por comunidad autónoma, del INE.
-- Datos de población por comunidad autónoma en formato PC-Axis: población de 2020, del INE.
+- Datos de olas de calor por provincia en formato JSON: provincias incluidas en cada una de las tres olas de calor nacionales registradas en 2020 (Agencia Estatal de Meteorología [AEMET], 2021).
+- Datos de variación de defunciones por comunidad autónoma en formato JSON: aumento de las defunciones en 2020 respecto a 2019, procedente del INE a través de EpData (EpData, s. f.).
+- Datos de defunciones atribuidas al COVID-19 por comunidad autónoma en formato CSV (Instituto Nacional de Estadística [INE], s. f.).
+- Datos de población por comunidad autónoma en 2020, descargados del INE en formato PC-Axis (INE, s. f.).
+- Datos de defunciones semanales de 2019 y 2020 por comunidad autónoma (INE, s. f.).
+- Datos de defunciones semanales atribuidas al COVID-19 durante 2020 (INE, s. f.).
 
-Las fuentes se importan, limpian y homogeneizan en R para utilizar nombres comunes de comunidades autónomas. Las olas de calor, que vienen por provincia, se agrupan por comunidad
-calculando la media de días de ola por provincia. Posteriormente, se integran mediante operaciones de unión todas las fuentes y se calcula la variación de defunciones no atribuida 
-a COVID-19 por cada 100.000 habitantes.
+Las fuentes se importan, limpian y homogeneizan en R para utilizar nombres comunes de comunidades autónomas. Las olas de calor, originalmente registradas por provincia, se agrupan por comunidad autónoma calculando la media de días de ola por provincia. Posteriormente, las diferentes tablas se integran mediante operaciones de unión y se calcula el aumento de defunciones no atribuido oficialmente al COVID-19 por cada 100.000 habitantes.
+
+La importación, transformación, unión y visualización de los datos se realizó con R 4.4.1 (R Core Team, 2024), siguiendo los procedimientos trabajados en la asignatura (Cánepa, 2026).
+
+El análisis permite identificar asociaciones y patrones territoriales, pero no establecer una relación causal entre las olas de calor y las defunciones.
 
 El análisis permite detectar asociaciones y patrones territoriales, pero no establecer una relación causal entre las olas de calor y las defunciones.
 
@@ -74,7 +77,7 @@ gráficos y su análisis correspondiente.
   - `muertesCovidSemana.csv`
   - `defunciones_semana_2020_2019.json`
   
--**INPUT/IMAGENES**:
+- **INPUT/IMAGENES**:
   - `fondo_seminario.png`
   - `wordcloud.png`
 
